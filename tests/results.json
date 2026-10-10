@@ -1,137 +1,137 @@
 {
-  "generated": "2026-10-10T06:59:10.239Z",
+  "generated": "2026-10-10T12:05:41.043Z",
   "total": 26,
   "passed": 26,
   "tests": [
     {
       "name": "Numerická integrace Planckova spektra = σT⁴",
       "passed": true,
-      "ms": 3.475166999999999
+      "ms": 3.334000000000003
     },
     {
       "name": "S=1361, A=0,30 → přibližně 255 K",
       "passed": true,
-      "ms": 0.04495800000000827
+      "ms": 0.03841600000001222
     },
     {
       "name": "Exponenciální integrál versus úhlová kvadratura",
       "passed": true,
-      "ms": 14.859207999999995
+      "ms": 15.947000000000003
     },
     {
       "name": "Interpolace Q je nezáporná, monotónní, přesná",
       "passed": true,
-      "ms": 0.7148329999999987
+      "ms": 0.7246250000000032
     },
     {
       "name": "Šedá vrstva: průhledný a neprůhledný limit",
       "passed": true,
-      "ms": 0.03420900000000415
+      "ms": 0.05937500000001705
     },
     {
       "name": "Šedá vrstva: Ts=Ta zachovává tok pro každé τ",
       "passed": true,
-      "ms": 0.029291000000000622
+      "ms": 0.0347500000000025
     },
     {
       "name": "Šedá vrstva: chladná snižuje a teplá zvyšuje OLR",
       "passed": true,
-      "ms": 0.05875000000000341
+      "ms": 0.017040999999977657
     },
     {
       "name": "Zdrojová data: délka, konečnost, nezáporná τ",
       "passed": true,
-      "ms": 38.60591699999999
+      "ms": 37.86137500000001
     },
     {
       "name": "Příspěvkové váhy ≥ 0 a součet = 1",
       "passed": true,
-      "ms": 36.30629099999999
+      "ms": 36.61658300000002
     },
     {
       "name": "Nulová absorpce → povrchový Planckův tok",
       "passed": true,
-      "ms": 20.917708000000005
+      "ms": 21.612459
     },
     {
       "name": "Spektrální izotermie: OLR nezávisí na CO₂",
       "passed": true,
-      "ms": 125.90579200000002
+      "ms": 126.185833
     },
     {
       "name": "Neprůhledný sloupec → emise horní vrstvy",
       "passed": true,
-      "ms": 24.490083000000027
+      "ms": 22.21875
     },
     {
       "name": "Běžný profil: zdvojnásobení CO₂ snižuje OLR",
       "passed": true,
-      "ms": 21.427750000000003
+      "ms": 16.15108300000003
     },
     {
       "name": "Inverze: zdvojnásobení CO₂ zvyšuje OLR",
       "passed": true,
-      "ms": 16.104749999999967
+      "ms": 16.184582999999975
     },
     {
       "name": "Příspěvkový součet rekonstruuje spektrální tok",
       "passed": true,
-      "ms": 9.884208000000001
+      "ms": 9.515041999999994
     },
     {
       "name": "Překryv CO₂/H₂O: změny toku se nesčítají",
       "passed": true,
-      "ms": 97.92020900000006
+      "ms": 97.86754200000001
     },
     {
       "name": "Rovnovážný kořen: reziduum a znaménka N",
       "passed": true,
-      "ms": 521.850167
+      "ms": 495.70608300000004
     },
     {
       "name": "Izotermický posun: rovnovážná Ts se s CO₂ nemění",
       "passed": true,
-      "ms": 952.9652079999998
+      "ms": 927.678292
     },
     {
       "name": "Předepsaná inverze: více CO₂ → nižší rovnovážná Ts",
       "passed": true,
-      "ms": 914.8239169999999
+      "ms": 910.0122080000001
     },
     {
       "name": "Pevná a posouvaná atmosféra: odlišné kořeny",
       "passed": true,
-      "ms": 911.1594580000001
+      "ms": 910.29675
     },
     {
       "name": "Chybějící kořen není extrapolován",
       "passed": true,
-      "ms": 290.46262499999966
+      "ms": 288.62708299999986
     },
     {
       "name": "Kořen přesně na mřížce a kraji: jedinečný, s derivací",
       "passed": true,
-      "ms": 950.7520409999997
+      "ms": 959.6685420000003
     },
     {
       "name": "Analytický izotermický kořen na hranici odolá zaokrouhlení; mimo rozsah se nevrací",
       "passed": true,
-      "ms": 4016.1580829999994
+      "ms": 4016.9028750000007
     },
     {
       "name": "Spektrální konvergence: 20, 50 a všech 200 bodů",
       "passed": true,
-      "ms": 829.6121669999993
+      "ms": 830.5459159999991
     },
     {
       "name": "Vertikální konvergence: 25, 50 a 100 vrstev",
       "passed": true,
-      "ms": 1769.8217499999992
+      "ms": 1584.1870839999992
     },
     {
       "name": "Všech šest výpočetních experimentů vrací výsledek",
       "passed": true,
-      "ms": 2153.0554169999996
+      "ms": 2227.5836660000004
     }
   ],
   "measurements": {

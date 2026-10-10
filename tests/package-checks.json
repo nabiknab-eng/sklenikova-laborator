@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-10",
+  "standaloneBytes": 10798694,
+  "inlineScripts": 6,
+  "externalScriptAssets": [],
+  "uniqueHTMLIds": 34,
+  "localDocumentLinks": [
+    "sklenikova-laborator-prepracovana/PHYSICS.md",
+    "sklenikova-laborator-prepracovana/POSOUZENI.md",
+    "sklenikova-laborator-prepracovana/README.md",
+    "sklenikova-laborator-prepracovana/VALIDATION.md"
+  ],
+  "allOriginalV1FilesPreserved": true,
+  "preservedV1FileCount": 41,
+  "physicsAndAtlasBitIdentical": true,
+  "zipCRCVerified": true
+}

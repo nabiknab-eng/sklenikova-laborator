@@ -1,0 +1,8 @@
+{
+  "source": "Original version 1, preserved before reworking",
+  "sha256": {
+    "physics.js": "906b7cc130b0d1c58d09d8515d2f03202bd9d3ea218e320292d795a42359f5bc",
+    "data/atlas.js": "0d3978aaffd4e6e720d29a9d6ec94bfb7190772fd257238599a949f0b0a9d75c",
+    "data/PROVENANCE.json": "02862da735e7f024da0fe30d8eb0703839d78430537ec12a304fe6dee6d87924"
+  }
+}

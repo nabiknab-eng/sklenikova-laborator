@@ -1,0 +1,1344 @@
+{
+  "date": "2026-10-10",
+  "method": "Read-only DOM observations after real UI actions; inspected by author, not an automated assertion suite.",
+  "sourceAndStandaloneHTTP": true,
+  "observations": [
+    {
+      "charts": [
+        "Planckovo spektrum povrchu",
+        "Příjem a výdej energie"
+      ],
+      "heading": "Jak najdete teplotu, při níž je bilance vyrovnaná?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ]
+      ],
+      "metrics": "Vyzařování povrchu\n390,1W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n238,2W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n254,6K\nideální izotermický povrch\nBilance při aktuálním Ts\n-151,93W m⁻²\npříjem − výdej",
+      "observation": "Při 288,0 K je příjem minus výdej -151,93 W m⁻². Výdej převažuje; při nižší teplotě vyzařování klesne.",
+      "scrollWidth": 805,
+      "width": 805
+    },
+    {
+      "charts": [
+        "Planckovo spektrum povrchu",
+        "Příjem a výdej energie"
+      ],
+      "heading": "Jak najdete teplotu, při níž je bilance vyrovnaná?",
+      "inputs": [
+        [
+          "number-ts",
+          "254.57814"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ]
+      ],
+      "metrics": "Vyzařování povrchu\n238,2W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n238,2W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n254,6K\nideální izotermický povrch\nBilance při aktuálním Ts\n0,00W m⁻²\npříjem − výdej",
+      "observation": "Při 254,6 K je příjem minus výdej 0,00 W m⁻². Průsečík byl dosažen.",
+      "scrollWidth": 805,
+      "width": 805
+    },
+    {
+      "charts": [
+        "Planckovo spektrum povrchu",
+        "Příjem a výdej energie"
+      ],
+      "heading": "Jak najdete teplotu, při níž je bilance vyrovnaná?",
+      "inputs": [
+        [
+          "number-ts",
+          "254.57814"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-albedo",
+          "0.297"
+        ]
+      ],
+      "metrics": "Vyzařování povrchu\n238,2W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n239,2W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n254,9K\nideální izotermický povrch\nBilance při aktuálním Ts\n+1,02W m⁻²\npříjem − výdej",
+      "observation": "Při 254,6 K je příjem minus výdej +1,02 W m⁻². Příjem převažuje; při vyšší teplotě vyzařování vzroste.",
+      "scrollWidth": 805,
+      "width": 805
+    },
+    {
+      "charts": [
+        "Planckovo spektrum povrchu",
+        "Příjem a výdej energie"
+      ],
+      "heading": "Jak najdete teplotu, při níž je bilance vyrovnaná?",
+      "inputs": [
+        [
+          "number-ts",
+          "254.57814"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-albedo",
+          "0.297"
+        ]
+      ],
+      "metrics": "Vyzařování povrchu\n238,2W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n239,2W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n254,9K\nideální izotermický povrch\nBilance při aktuálním Ts\n+1,02W m⁻²\npříjem − výdej",
+      "observation": "Při 254,6 K je příjem minus výdej +1,02 W m⁻². Příjem převažuje; při vyšší teplotě vyzařování vzroste.",
+      "scrollWidth": 805,
+      "width": 805
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?",
+        "Z jakých výšek přispívá záření?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n-1,88W m⁻²\naktuální minus reference\nZdvojnásobení aktuálního CO₂\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = -1,88 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 805,
+      "width": 805
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n-1,88W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n390,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n+132,97W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n0,00W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = +132,97 W m⁻². Změnili jste také teplotní profil; rozdíl zahrnuje jeho účinek.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n390,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n+132,97W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n0,00W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = +132,97 W m⁻². Změnili jste také teplotní profil; rozdíl zahrnuje jeho účinek.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Vertikální profil atmosférické teploty",
+        "Změna OLR s množstvím CO₂"
+      ],
+      "heading": "Musí více CO₂ vždy snížit tok do vesmíru?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ],
+        [
+          "number-tropopause",
+          "11000"
+        ],
+        [
+          "number-stratGradient",
+          "0.001"
+        ],
+        [
+          "number-co2",
+          "1"
+        ]
+      ],
+      "metrics": "OLR při aktuálním CO₂\n257,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n257,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n-1,88W m⁻²\npokles toku\nΔ dlouhovlnné bilance\n+1,88W m⁻²\n−ΔOLR, pevné ASR",
+      "observation": "Při tomto profilu změní 1× → 2× CO₂ OLR o -1,88 W m⁻². Do vesmíru odchází méně energie.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Vertikální profil atmosférické teploty",
+        "Změna OLR s množstvím CO₂"
+      ],
+      "heading": "Musí více CO₂ vždy snížit tok do vesmíru?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "0"
+        ],
+        [
+          "number-tropopause",
+          "11000"
+        ],
+        [
+          "number-stratGradient",
+          "0"
+        ],
+        [
+          "number-co2",
+          "1"
+        ]
+      ],
+      "metrics": "OLR při aktuálním CO₂\n390,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n390,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n0,00W m⁻²\ntok se nemění\nΔ dlouhovlnné bilance\n0,00W m⁻²\n−ΔOLR, pevné ASR",
+      "observation": "Při tomto profilu změní 1× → 2× CO₂ OLR o 0,00 W m⁻². Součet toků se nemění. To samo neprokazuje, že jde o izotermii.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Vertikální profil atmosférické teploty",
+        "Změna OLR s množstvím CO₂"
+      ],
+      "heading": "Musí více CO₂ vždy snížit tok do vesmíru?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "0.003"
+        ],
+        [
+          "number-tropopause",
+          "11000"
+        ],
+        [
+          "number-stratGradient",
+          "0"
+        ],
+        [
+          "number-co2",
+          "1"
+        ]
+      ],
+      "metrics": "OLR při aktuálním CO₂\n494,0W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n494,0W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n+2,71W m⁻²\nrůst toku\nΔ dlouhovlnné bilance\n-2,71W m⁻²\n−ΔOLR, pevné ASR",
+      "observation": "Při tomto profilu změní 1× → 2× CO₂ OLR o +2,71 W m⁻². Do vesmíru odchází více energie.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n390,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n+132,97W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n0,00W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = +132,97 W m⁻². Změnili jste také teplotní profil; rozdíl zahrnuje jeho účinek.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n390,1W m⁻²\ntok do vesmíru\nOLR reference\n390,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n0,00W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n-1,88W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n-1,88W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = -1,88 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Dva příspěvky tvoří jeden tok"
+      ],
+      "heading": "Co nahradí zeslabené záření povrchu?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-ta",
+          "250"
+        ],
+        [
+          "number-tau",
+          "1"
+        ]
+      ],
+      "metrics": "Celkový OLR\n258,5W m⁻²\nsoučet obou příspěvků\nPovrchový příspěvek\n85,6W m⁻²\nčást, která projde přímo\nAtmosférický příspěvek\n172,9W m⁻²\nvlastní emise, která unikne\nHemisférická propustnost\n0,2191\nprůměr přes směry s váhou μ",
+      "observation": "Při τ = 1,00: povrch 85,6 + atmosféra 172,9 = 258,5 W m⁻². Chladnější vrstva: s τ součet klesá.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Dva příspěvky tvoří jeden tok"
+      ],
+      "heading": "Co nahradí zeslabené záření povrchu?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-ta",
+          "288"
+        ],
+        [
+          "number-tau",
+          "1"
+        ]
+      ],
+      "metrics": "Celkový OLR\n390,1W m⁻²\nsoučet obou příspěvků\nPovrchový příspěvek\n85,6W m⁻²\nčást, která projde přímo\nAtmosférický příspěvek\n304,5W m⁻²\nvlastní emise, která unikne\nHemisférická propustnost\n0,2191\nprůměr přes směry s váhou μ",
+      "observation": "Při τ = 1,00: povrch 85,6 + atmosféra 304,5 = 390,1 W m⁻². S τ se obě části mění, ale součet zůstává stejný.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Dva příspěvky tvoří jeden tok"
+      ],
+      "heading": "Co nahradí zeslabené záření povrchu?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-ta",
+          "288"
+        ],
+        [
+          "number-tau",
+          "5"
+        ]
+      ],
+      "metrics": "Celkový OLR\n390,1W m⁻²\nsoučet obou příspěvků\nPovrchový příspěvek\n0,7W m⁻²\nčást, která projde přímo\nAtmosférický příspěvek\n389,4W m⁻²\nvlastní emise, která unikne\nHemisférická propustnost\n0,0021\nprůměr přes směry s váhou μ",
+      "observation": "Při τ = 5,00: povrch 0,7 + atmosféra 389,4 = 390,1 W m⁻². S τ se obě části mění, ale součet zůstává stejný.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Dva příspěvky tvoří jeden tok"
+      ],
+      "heading": "Co nahradí zeslabené záření povrchu?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-ta",
+          "298"
+        ],
+        [
+          "number-tau",
+          "5"
+        ]
+      ],
+      "metrics": "Celkový OLR\n447,1W m⁻²\nsoučet obou příspěvků\nPovrchový příspěvek\n0,7W m⁻²\nčást, která projde přímo\nAtmosférický příspěvek\n446,4W m⁻²\nvlastní emise, která unikne\nHemisférická propustnost\n0,0021\nprůměr přes směry s váhou μ",
+      "observation": "Při τ = 5,00: povrch 0,7 + atmosféra 446,4 = 447,1 W m⁻². Teplejší vrstva: s τ součet roste.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru"
+      ],
+      "heading": "Má zdvojnásobení CO₂ stejný účinek s vodou a bez vody?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-ch4",
+          "1"
+        ],
+        [
+          "number-n2o",
+          "1"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\nzvolené plyny\nΔOLR proti referenci\n0,00W m⁻²\naktuální minus reference\nCO₂ + H₂O: společný pokles\n124,4W m⁻²\nvůči stavu bez obou plynů\nSoučet izolovaných poklesů\n137,2W m⁻²\nspolečný minus součet: -12,76 W m⁻²",
+      "observation": "Proti uložené referenci je ΔOLR = 0,00 W m⁻². Aktuálně: CO₂ 1,00×, H₂O 1,00×; reference: CO₂ 1,00×, H₂O 1,00×.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?"
+      ],
+      "heading": "Má zdvojnásobení CO₂ stejný účinek s vodou a bez vody?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "0"
+        ],
+        [
+          "number-ch4",
+          "1"
+        ],
+        [
+          "number-n2o",
+          "1"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n343,4W m⁻²\nzvolené plyny\nΔOLR proti referenci\n-3,10W m⁻²\naktuální minus reference\nCO₂ + H₂O: společný pokles\n38,2W m⁻²\nvůči stavu bez obou plynů\nSoučet izolovaných poklesů\n38,2W m⁻²\nspolečný minus součet: 0,00 W m⁻²",
+      "observation": "Proti uložené referenci je ΔOLR = -3,10 W m⁻². Aktuálně: CO₂ 2,00×, H₂O 0,00×; reference: CO₂ 1,00×, H₂O 0,00×.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?"
+      ],
+      "heading": "Má zdvojnásobení CO₂ stejný účinek s vodou a bez vody?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-ch4",
+          "1"
+        ],
+        [
+          "number-n2o",
+          "1"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\nzvolené plyny\nΔOLR proti referenci\n-1,88W m⁻²\naktuální minus reference\nCO₂ + H₂O: společný pokles\n126,3W m⁻²\nvůči stavu bez obou plynů\nSoučet izolovaných poklesů\n140,3W m⁻²\nspolečný minus součet: -13,98 W m⁻²",
+      "observation": "Proti uložené referenci je ΔOLR = -1,88 W m⁻². Aktuálně: CO₂ 2,00×, H₂O 1,00×; reference: CO₂ 1,00×, H₂O 1,00×.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n257,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-18,96W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,20K\nreziduum 0,000015 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -18,96 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n0,00 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 1,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,20 K\n\nZměna Ts: 0,000 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n255,3W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-17,08W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -17,08 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "0"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n390,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-151,93W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n254,58K\nreziduum 0,000010 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -151,93 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n254,58 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n0,00 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n254,58 K\n\nZměna Ts: 0,000 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "0.003"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n496,7W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-258,50W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -258,50 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n236,25 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n-1,75 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n235,77 K\n\nZměna Ts: -0,481 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n257,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-18,96W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,20K\nreziduum 0,000015 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -18,96 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n0,00 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 1,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,20 K\n\nZměna Ts: 0,000 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n255,3W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-17,08W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -17,08 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n257,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-18,96W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,20K\nreziduum 0,000015 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -18,96 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n0,00 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 1,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,20 K\n\nZměna Ts: 0,000 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n255,3W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-17,08W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -17,08 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "283.661"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 283,7 K\nEnergetická nerovnováha N\n0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 283,7 K je N = +1.62e-5 W m⁻². Bilance TOA je vyrovnaná.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "283.661"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ],
+        [
+          "number-atmosAnchor",
+          "288"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n248,3W m⁻²\npři Ts = 283,7 K\nEnergetická nerovnováha N\n-10,12W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n276,94K\nreziduum 0,000001 W m⁻²",
+      "observation": "Při zadané Ts = 283,7 K je N = -10,12 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n275,99 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,36 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n276,94 K\n\nZměna Ts: +0,947 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n-1,88W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n-1,88W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = -1,88 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "charts": [
+        "Vertikální profil atmosférické teploty",
+        "Změna OLR s množstvím CO₂"
+      ],
+      "heading": "Musí více CO₂ vždy snížit tok do vesmíru?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ],
+        [
+          "number-tropopause",
+          "11000"
+        ],
+        [
+          "number-stratGradient",
+          "0.001"
+        ],
+        [
+          "number-co2",
+          "1"
+        ]
+      ],
+      "metrics": "OLR při aktuálním CO₂\n257,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n257,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n-1,88W m⁻²\npokles toku\nΔ dlouhovlnné bilance\n+1,88W m⁻²\n−ΔOLR, pevné ASR",
+      "observation": "Při tomto profilu změní 1× → 2× CO₂ OLR o -1,88 W m⁻². Do vesmíru odchází méně energie.",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "charts": [
+        "Vertikální profil atmosférické teploty",
+        "Změna OLR s množstvím CO₂"
+      ],
+      "heading": "Musí více CO₂ vždy snížit tok do vesmíru?",
+      "inputs": [
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "0"
+        ],
+        [
+          "number-tropopause",
+          "11000"
+        ],
+        [
+          "number-stratGradient",
+          "0"
+        ],
+        [
+          "number-co2",
+          "1"
+        ]
+      ],
+      "metrics": "OLR při aktuálním CO₂\n390,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n390,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n0,00W m⁻²\ntok se nemění\nΔ dlouhovlnné bilance\n0,00W m⁻²\n−ΔOLR, pevné ASR",
+      "observation": "Při tomto profilu změní 1× → 2× CO₂ OLR o 0,00 W m⁻². Povrch i vrstvy mají stejnou teplotu; oba účinky se přesně vyrovnají.",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "283.661"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 283,7 K\nEnergetická nerovnováha N\n0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 283,7 K je N = +1.62e-5 W m⁻². Bilance TOA je vyrovnaná.",
+      "scrollWidth": 390,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 390
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "283.661"
+        ],
+        [
+          "number-gradient",
+          "0.003"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n469,3W m⁻²\npři Ts = 283,7 K\nEnergetická nerovnováha N\n-231,12W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "observation": "Při zadané Ts = 283,7 K je N = -231,12 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 390,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n236,25 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n-1,75 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n235,77 K\n\nZměna Ts: -0,481 K při zvoleném pravidlu atmosféry.",
+      "width": 390
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n-1,88W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = -1,88 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n-1,88W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n-1,88W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = -1,88 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Kde se změnil odcházející tok?",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n255,3W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 2,0× → 4,0×\n-2,01W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Spektrum záření do vesmíru",
+        "Které vrstvy přispívají v obou stavech?"
+      ],
+      "heading": "Ve které části spektra se projeví více CO₂?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-ts",
+          "288"
+        ]
+      ],
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR\n0,00W m⁻²\naktuální minus reference\nDalší změna: 1,0× → 2,0×\n-1,88W m⁻²\nstejné aktuální teploty",
+      "observation": "Aktuální stav minus reference: ΔOLR = 0,00 W m⁻². Teploty obou stavů jsou stejné.",
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "1"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n257,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-18,96W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,20K\nreziduum 0,000015 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -18,96 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n0,00 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 1,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,20 K\n\nZměna Ts: 0,000 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "288"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n255,3W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-17,08W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 288,0 K je N = -17,08 W m⁻². To je bilance aktuálního bodu; tři kroky níže začínají v rovnováze při 1× CO₂.",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    },
+    {
+      "charts": [
+        "Průsečík příjmu a výdeje",
+        "Energetická nerovnováha"
+      ],
+      "heading": "Jak změna toku posune radiační rovnováhu?",
+      "inputs": [
+        [
+          "number-co2",
+          "2"
+        ],
+        [
+          "number-h2o",
+          "1"
+        ],
+        [
+          "number-albedo",
+          "0.3"
+        ],
+        [
+          "number-solar",
+          "1361"
+        ],
+        [
+          "number-ts",
+          "283.661"
+        ],
+        [
+          "number-gradient",
+          "-0.0065"
+        ]
+      ],
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 283,7 K\nEnergetická nerovnováha N\n0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n283,66K\nreziduum 0,000016 W m⁻²",
+      "observation": "Při zadané Ts = 283,7 K je bilance TOA vyrovnaná v numerické toleranci (N ≈ 0).",
+      "scrollWidth": 1280,
+      "steps": "1 · ROVNOVÁHA PŘI 1×\n283,20 K\n\nOstatní aktuální parametry včetně ASR a pravidla změny profilu.\n\n2 · ZMĚNA PŘI STEJNÝCH TEPLOTÁCH\n+1,78 W m⁻²\n\nΔN = OLR₁ₓ − OLRnové při původní Ts. Aktuální CO₂: 2,0×.\n\n3 · NOVÁ ROVNOVÁHA\n283,66 K\n\nZměna Ts: +0,465 K při zvoleném pravidlu atmosféry.",
+      "width": 1280
+    }
+  ],
+  "errorsAfterFix": [],
+  "csvDownloadConfirmed": false
+}
