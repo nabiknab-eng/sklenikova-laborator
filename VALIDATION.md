@@ -69,3 +69,11 @@ Z hlediska fyzika jsou oddělené předepsané teploty a energetická rovnováha
 Jde o oddělený závěrečný průchod autora, ne o posudek jiného člověka. Přínos pro porozumění je odborně a pedagogicky odůvodněný, nebyl ale měřen na skutečné třídě. Vhodným dalším ověřením je nechat studenty před a po pokusu vysvětlit rozdíl mezi absorpcí a unikající emisí a předpovědět znaménko u neznámého profilu.
 
 Samostatné HTML, vazby dokumentace, ZIP a zachování všech souborů v1 jsou kontrolovány při balení; strojový výsledek je v `tests/package-checks.json`.
+
+## Doplnění úvodu a radiačního působení — 10. 10. 2026
+
+Úvod nyní řadí otevřené vysvětlivky ke grafům před výklad energetické bilance a před přehled šesti experimentů. Vysvětluje OLR, ASR, TOA, jednotky W m⁻², bilanci N = ASR − OLR a význam značky Δ. Podrobný mechanismus CO₂ je v existujícím rozbalovacím výkladu experimentu 2; experiment 6 na něj navazuje vztahem ΔN_LW = −ΔOLR a rozlišením okamžité dlouhovlnné složky od úplného IRF a následné teplotní odezvy. Definice IRF odkazuje na IPCC AR6, oddíl 7.3.1. Formulace kladného působení je vztažena k obvyklému zemskému profilu; izotermie a inverze zůstávají výslovně vysvětlené.
+
+V této úpravě se měnily pouze texty, jejich pořadí a příslušné styly. Výpočetní moduly, grafy a spektrální data jsou bitově shodné s předchozím zveřejněním. Deset stávajících kontrol výukových výpočtů prošlo; kontrola syntaxe JavaScriptu také. Samostatné HTML obsahuje šest vložených skriptů, žádné externí skripty a jedinečná ID. Balicí kontrola potvrzuje zachování původní verze 1 a neporušený ZIP.
+
+Samostatné HTML bylo při tomto doplnění úspěšně otevřeno přímo přes file:// v Safari. Bylo ověřeno otevření vysvětlivek, pořadí úvodu, přechody do experimentů 2 a 6, rozbalení jejich nových výkladů, čitelnost vzorce a dokončení výpočtu energetické rovnováhy. Dřívější poznámka o nedostupném file:// popisuje omezení předchozího kontrolního prohlížeče.

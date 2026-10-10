@@ -79,6 +79,9 @@
 .experiment-entry .button{display:inline-block;text-decoration:none;margin-top:9px}
 .home-help,.physics-explanation,.optional-plot{border:1px solid var(--border);background:white;border-radius:8px;min-width:0}
 .home-help{margin-top:23px}
+.home-physics h2{padding:17px 20px 0;margin:0;font-size:20px;line-height:1.4;letter-spacing:-.3px}
+.home-help p{margin:13px 0}
+.home-physics{margin-bottom:23px}
 .home-help summary,.physics-explanation summary,.optional-plot>summary{padding:17px 20px;font-size:13px;font-weight:550;cursor:pointer;line-height:1.5}
 .home-help>div,.physics-explanation>div,.four-states{padding:0 21px 14px;font-size:14px;line-height:1.8}
 .physics-explanation .context-note{font-size:13px;color:var(--muted);border-left:2px solid var(--border);padding-left:14px}
