@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-10",
+  "method": "Actual browser UI actions and rendered DOM observations via CUA; local HTTP on loopback",
+  "checks": [
+    {
+      "check": "Default homepage, six detailed guides, separate experiment route",
+      "passed": true,
+      "guides": 6,
+      "introVisible": true,
+      "experimentVisible": false
+    },
+    {
+      "check": "Nonmonotonic T(z): identical temperature at two different altitudes selected separately",
+      "passed": true,
+      "tooltip5": "Výška: 5 000 m\nAktuální profil: 255,5 K\nReference: 255,5 K",
+      "tooltip50": "Výška: 50 000 m\nAktuální profil: 255,5 K\nReference: 255,5 K"
+    },
+    {
+      "check": "Guide backlink targets experiment 3 article and return works; preset 0 gives equal-temperature unchanged OLR",
+      "passed": true,
+      "deltaOLR": "0.00 W m^-2"
+    },
+    {
+      "check": "Contribution profile selects height; spectral cursor remains synchronized after CO2 zoom",
+      "passed": true,
+      "c0": "Výška: 500 m\nAtmosférické vrstvy: 0 W m⁻³ (m⁻¹)⁻¹",
+      "c1": "Výška: 49 500 m\nAtmosférické vrstvy: 1.06e-6 W m⁻³ (m⁻¹)⁻¹",
+      "spectralTooltips": [
+        "Vlnočet: 45 100 m⁻¹Vlnová délka: 22,2 µmAktuální stav: 0,00259 W m⁻² (m⁻¹)⁻¹Reference: 0,00259 W m⁻² (m⁻¹)⁻¹Černý povrch: 0,00403 W m⁻² (m⁻¹)⁻¹",
+        "Vlnočet: 45 100 m⁻¹Vlnová délka: 22,2 µmAktuální průměr: 6 575,5 mReferenční průměr: 6 575,5 m10–90 %: 3 500 až 10 500 m",
+        ""
+      ]
+    },
+    {
+      "check": "Experiment 1 renders two charts and clarifies whole Planck integral vs plotted range",
+      "passed": true
+    },
+    {
+      "check": "Experiment 4 equal temperatures at tau=12, constant sum 390.1 W/m2, two charts",
+      "passed": true,
+      "metrics": "Celkový OLR\n390,1W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n0,0W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n390,1W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,0001\núhlový průměr s váhou μ"
+    },
+    {
+      "check": "Experiment 5 three charts, optical depth labeled log10(1+tau) with dimensionless units",
+      "passed": true
+    },
+    {
+      "check": "Experiment 6 prescribed inversion: 2x CO2 lowers equilibrium to 235.77 K, delta=-0.481 K",
+      "passed": true,
+      "comparison": "Rovnovážná Ts proti 1× CO₂ při stejném profilu a uzávěru: -0,481 K. Aktuální sloupec CO₂ zde dává nižší rovnovážnou povrchovou teplotu než 1×. Teplotní profil je předepsaný; model neřeší jeho samovolné vytvoření ani udržení."
+    },
+    {
+      "check": "Experiment 6 fully isothermal profile: equilibrium 254.58 K, delta 0 at 2x",
+      "passed": true,
+      "comparison": "Rovnovážná Ts proti 1× CO₂ při stejném profilu a uzávěru: 0,000 K. Aktuální a referenční rovnovážná teplota se shodují. V plné izotermii s posunem profilu to platí pro každý sloupec CO₂."
+    },
+    {
+      "check": "Exact 200 K boundary after roundoff fix renders root and finite derivative at 2x CO2",
+      "passed": true,
+      "caption": "Ts = 200,000 K · dOLR/dTs = 1,815 W m⁻² K⁻¹ · stabilní pro pevné ASR a kladnou tepelnou kapacitu."
+    },
+    {
+      "check": "Tablet homepage 800x1000 no horizontal overflow",
+      "passed": true
+    },
+    {
+      "check": "Mobile homepage 390x844 no horizontal overflow",
+      "passed": true
+    },
+    {
+      "check": "Mobile temperature profile 390x844 no horizontal overflow, Y height label and X Kelvin label visible",
+      "passed": true
+    },
+    {
+      "check": "Tablet temperature profile 800x1000 no horizontal overflow",
+      "passed": true
+    },
+    {
+      "check": "Homepage guide index opens article 6 at correct position",
+      "passed": true
+    },
+    {
+      "check": "300 K current profile and frozen 300 K reference survive trip through guide",
+      "passed": true
+    },
+    {
+      "check": "Reset returns current and reference surface temperatures to 288 K",
+      "passed": true,
+      "tooltip": "Výška: 0 m\nAktuální profil: 288 K\nReference: 288 K"
+    },
+    {
+      "check": "Isothermal vertical temperature profile is a vertical line",
+      "passed": true
+    },
+    {
+      "check": "No browser console errors or warnings",
+      "passed": true,
+      "logs": []
+    }
+  ],
+  "sourceVisualCheck": {
+    "url": "https://www.noaa.gov/sites/default/files/styles/default_width_428/public/2023-05/atmprofile.jpg?itok=8BQ5be-7",
+    "observed": "Temperature Celsius horizontal; altitude kilometres vertical, supplementary miles axis"
+  },
+  "exportVerification": {
+    "temperatureCSV": {
+      "rows": 102,
+      "bytes": 1688,
+      "heightRange": [
+        0,
+        50000
+      ],
+      "units": [
+        "m",
+        "K"
+      ],
+      "everyValueCheckedAgainstPrescribedProfile": true
+    },
+    "temperatureSVG": {
+      "validXML": true,
+      "width": 647,
+      "height": 350,
+      "bytes": 5791
+    },
+    "temperaturePNG": {
+      "width": 1294,
+      "height": 700,
+      "bytes": 76374,
+      "visuallyInspected": true
+    },
+    "contributionCSV": {
+      "rows": 51,
+      "heightRange": [
+        500,
+        49500
+      ],
+      "nonnegative": true
+    }
+  }
+}

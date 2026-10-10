@@ -1,0 +1,396 @@
+{
+  "generated": "2026-10-10T06:59:10.239Z",
+  "total": 26,
+  "passed": 26,
+  "tests": [
+    {
+      "name": "Numerická integrace Planckova spektra = σT⁴",
+      "passed": true,
+      "ms": 3.475166999999999
+    },
+    {
+      "name": "S=1361, A=0,30 → přibližně 255 K",
+      "passed": true,
+      "ms": 0.04495800000000827
+    },
+    {
+      "name": "Exponenciální integrál versus úhlová kvadratura",
+      "passed": true,
+      "ms": 14.859207999999995
+    },
+    {
+      "name": "Interpolace Q je nezáporná, monotónní, přesná",
+      "passed": true,
+      "ms": 0.7148329999999987
+    },
+    {
+      "name": "Šedá vrstva: průhledný a neprůhledný limit",
+      "passed": true,
+      "ms": 0.03420900000000415
+    },
+    {
+      "name": "Šedá vrstva: Ts=Ta zachovává tok pro každé τ",
+      "passed": true,
+      "ms": 0.029291000000000622
+    },
+    {
+      "name": "Šedá vrstva: chladná snižuje a teplá zvyšuje OLR",
+      "passed": true,
+      "ms": 0.05875000000000341
+    },
+    {
+      "name": "Zdrojová data: délka, konečnost, nezáporná τ",
+      "passed": true,
+      "ms": 38.60591699999999
+    },
+    {
+      "name": "Příspěvkové váhy ≥ 0 a součet = 1",
+      "passed": true,
+      "ms": 36.30629099999999
+    },
+    {
+      "name": "Nulová absorpce → povrchový Planckův tok",
+      "passed": true,
+      "ms": 20.917708000000005
+    },
+    {
+      "name": "Spektrální izotermie: OLR nezávisí na CO₂",
+      "passed": true,
+      "ms": 125.90579200000002
+    },
+    {
+      "name": "Neprůhledný sloupec → emise horní vrstvy",
+      "passed": true,
+      "ms": 24.490083000000027
+    },
+    {
+      "name": "Běžný profil: zdvojnásobení CO₂ snižuje OLR",
+      "passed": true,
+      "ms": 21.427750000000003
+    },
+    {
+      "name": "Inverze: zdvojnásobení CO₂ zvyšuje OLR",
+      "passed": true,
+      "ms": 16.104749999999967
+    },
+    {
+      "name": "Příspěvkový součet rekonstruuje spektrální tok",
+      "passed": true,
+      "ms": 9.884208000000001
+    },
+    {
+      "name": "Překryv CO₂/H₂O: změny toku se nesčítají",
+      "passed": true,
+      "ms": 97.92020900000006
+    },
+    {
+      "name": "Rovnovážný kořen: reziduum a znaménka N",
+      "passed": true,
+      "ms": 521.850167
+    },
+    {
+      "name": "Izotermický posun: rovnovážná Ts se s CO₂ nemění",
+      "passed": true,
+      "ms": 952.9652079999998
+    },
+    {
+      "name": "Předepsaná inverze: více CO₂ → nižší rovnovážná Ts",
+      "passed": true,
+      "ms": 914.8239169999999
+    },
+    {
+      "name": "Pevná a posouvaná atmosféra: odlišné kořeny",
+      "passed": true,
+      "ms": 911.1594580000001
+    },
+    {
+      "name": "Chybějící kořen není extrapolován",
+      "passed": true,
+      "ms": 290.46262499999966
+    },
+    {
+      "name": "Kořen přesně na mřížce a kraji: jedinečný, s derivací",
+      "passed": true,
+      "ms": 950.7520409999997
+    },
+    {
+      "name": "Analytický izotermický kořen na hranici odolá zaokrouhlení; mimo rozsah se nevrací",
+      "passed": true,
+      "ms": 4016.1580829999994
+    },
+    {
+      "name": "Spektrální konvergence: 20, 50 a všech 200 bodů",
+      "passed": true,
+      "ms": 829.6121669999993
+    },
+    {
+      "name": "Vertikální konvergence: 25, 50 a 100 vrstev",
+      "passed": true,
+      "ms": 1769.8217499999992
+    },
+    {
+      "name": "Všech šest výpočetních experimentů vrací výsledek",
+      "passed": true,
+      "ms": 2153.0554169999996
+    }
+  ],
+  "measurements": {
+    "planck": [
+      {
+        "T": 150,
+        "numerical": 28.706270497166976,
+        "analytic": 28.706270497121185,
+        "relativeError": 1.595168441781425e-12
+      },
+      {
+        "T": 255,
+        "numerical": 239.75764181938592,
+        "analytic": 239.75764181900584,
+        "relativeError": 1.5851764345597985e-12
+      },
+      {
+        "T": 288,
+        "numerical": 390.10515355517055,
+        "analytic": 390.1051535545499,
+        "relativeError": 1.5909495942878493e-12
+      },
+      {
+        "T": 350,
+        "numerical": 850.9105612802214,
+        "analytic": 850.9105612788637,
+        "relativeError": 1.595612530991275e-12
+      },
+      {
+        "T": 600,
+        "numerical": 7348.805247274746,
+        "analytic": 7348.805247263023,
+        "relativeError": 1.595168441781425e-12
+      }
+    ],
+    "asr": 238.17499999999998,
+    "teff": 254.57814011450162,
+    "angular": [
+      {
+        "tau": 0,
+        "analytic": 1,
+        "quadrature": 0.9999999999999999,
+        "absError": 1.1102230246251565e-16
+      },
+      {
+        "tau": 0.000001,
+        "analytic": 0.9999980000147383,
+        "quadrature": 0.999998000012205,
+        "absError": 2.533306897589682e-12
+      },
+      {
+        "tau": 0.001,
+        "analytic": 0.9980078308729058,
+        "quadrature": 0.9980078308695498,
+        "absError": 3.355982158836923e-12
+      },
+      {
+        "tau": 0.01,
+        "analytic": 0.9805531283693303,
+        "quadrature": 0.980553128369328,
+        "absError": 2.3314683517128287e-15
+      },
+      {
+        "tau": 0.1,
+        "analytic": 0.8325829158165575,
+        "quadrature": 0.8325829158165564,
+        "absError": 1.1102230246251565e-15
+      },
+      {
+        "tau": 1,
+        "analytic": 0.2193839343955205,
+        "quadrature": 0.2193839343955199,
+        "absError": 6.106226635438361e-16
+      },
+      {
+        "tau": 2,
+        "analytic": 0.06026675959563085,
+        "quadrature": 0.060266759595631755,
+        "absError": 9.020562075079397e-16
+      },
+      {
+        "tau": 8,
+        "analytic": 0.0000623614666936119,
+        "quadrature": 0.00006236146669361075,
+        "absError": 1.1519648082658485e-18
+      },
+      {
+        "tau": 10,
+        "analytic": 0.000007097525106168757,
+        "quadrature": 0.000007097525106168754,
+        "absError": 3.3881317890172014e-21
+      },
+      {
+        "tau": 30,
+        "analytic": 5.686148656280656e-15,
+        "quadrature": 5.6861486562806366e-15,
+        "absError": 1.9721522630525295e-29
+      }
+    ],
+    "maxTransmissionInterpolationError": 3.394740359097259e-7,
+    "maxWeightSumError": 7.771561172376096e-16,
+    "reference": {
+      "olr": 257.13619295847855,
+      "doubleOLR": 255.25824761571803,
+      "deltaOLR": -1.877945342760512,
+      "instantaneousLWBalanceChange": 1.877945342760512,
+      "transparentTail": 0.000015008818422757031
+    },
+    "inversion": {
+      "olr": 493.9619149179853,
+      "doubleOLR": 496.6741944699878,
+      "deltaOLR": 2.712279552002485
+    },
+    "overlap": {
+      "joint": 124.40576299960321,
+      "separate": 137.1702962114881,
+      "difference": -12.764533211884896
+    },
+    "equilibrium": {
+      "T": 283.1960725784302,
+      "residual": 0.000014814348986647019,
+      "dOLR": 3.8444464967938075
+    },
+    "isothermalEquilibrium": {
+      "one": 254.5781373977661,
+      "two": 254.5781373977661,
+      "delta": 0
+    },
+    "inversionEquilibrium": {
+      "one": 236.24640941619873,
+      "two": 235.76515674591064,
+      "delta": -0.48125267028808594
+    },
+    "fixedAtmosphereEquilibrium": {
+      "T": 275.9900712966919,
+      "residual": -0.000005282235719050732,
+      "dOLR": 1.4685415334056984
+    },
+    "exactGridRoots": [
+      {
+        "target": 200,
+        "A": 0.75,
+        "S": 1451.6158513182636,
+        "T": 200,
+        "residual": 0,
+        "dOLR": 1.8145198187873746
+      },
+      {
+        "target": 225,
+        "A": 0.5,
+        "S": 1162.603955133328,
+        "T": 225,
+        "residual": 0,
+        "dOLR": 2.5835643499505068
+      },
+      {
+        "target": 380,
+        "A": 0.05,
+        "S": 4978.316562071742,
+        "T": 380,
+        "residual": 0,
+        "dOLR": 12.445791412994822
+      }
+    ],
+    "gridRootRoundoff": [
+      {
+        "target": 200,
+        "co2": 0,
+        "residual": -4.426254918143968e-10
+      },
+      {
+        "target": 200,
+        "co2": 1,
+        "residual": -4.405791287354077e-10
+      },
+      {
+        "target": 200,
+        "co2": 2,
+        "residual": -4.4374814933689777e-10
+      },
+      {
+        "target": 200,
+        "co2": 8,
+        "residual": -4.4300918489170726e-10
+      },
+      {
+        "target": 225,
+        "co2": 0,
+        "residual": 9.492850949754938e-12
+      },
+      {
+        "target": 225,
+        "co2": 1,
+        "residual": 9.976020010071807e-12
+      },
+      {
+        "target": 225,
+        "co2": 2,
+        "residual": 1.043076736095827e-11
+      },
+      {
+        "target": 225,
+        "co2": 8,
+        "residual": 4.121147867408581e-12
+      },
+      {
+        "target": 380,
+        "co2": 0,
+        "residual": 8.640199666842818e-12
+      },
+      {
+        "target": 380,
+        "co2": 1,
+        "residual": 1.6143530956469476e-11
+      },
+      {
+        "target": 380,
+        "co2": 2,
+        "residual": 2.751221472863108e-11
+      },
+      {
+        "target": 380,
+        "co2": 8,
+        "residual": 3.501554601825774e-11
+      }
+    ],
+    "spectralConvergence": [
+      {
+        "samples": 20,
+        "olr": 257.1361929584703,
+        "deltaOLR": -1.8779453427605972
+      },
+      {
+        "samples": 50,
+        "olr": 257.1422372080524,
+        "deltaOLR": -1.8756795244187003
+      },
+      {
+        "samples": 200,
+        "olr": 257.1449877197504,
+        "deltaOLR": -1.874460999364004
+      }
+    ],
+    "verticalConvergence": [
+      {
+        "layers": 25,
+        "olr": 256.75356428413744,
+        "deltaOLR": -1.8701966267297507
+      },
+      {
+        "layers": 50,
+        "olr": 257.1449877197504,
+        "deltaOLR": -1.874460999364004
+      },
+      {
+        "layers": 100,
+        "olr": 257.1727140517215,
+        "deltaOLR": -1.8747866573784222
+      }
+    ]
+  }
+}

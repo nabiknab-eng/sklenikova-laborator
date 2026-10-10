@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-09",
+  "environment": "Codex in-app browser over local HTTP",
+  "method": "Actual UI actions with rendered DOM and screenshot observations; manual verification, not a browser test runner.",
+  "notes": [
+    "Older observations retain the text rendered before final formatting changes.",
+    "The initial tau=12 observation was superseded by a corrected input event and a final verification.",
+    "file:// navigation was rejected by browser security policy; direct file startup is unverified.",
+    "No physical tablet or external browser matrix tested."
+  ],
+  "observations": [
+    {
+      "check": "2: CO₂ 1× → 2×",
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR proti referenci\n-1,88W m⁻²\nméně energie uniká ven\nZdvojnásobení aktuálního CO₂\n-2,01W m⁻²\nΔOLR při pevném profilu",
+      "id": 0,
+      "status": "observed"
+    },
+    {
+      "check": "Uložení reference",
+      "metrics": "Aktuální OLR\n255,3W m⁻²\ntok do vesmíru\nOLR reference\n255,3W m⁻²\nuložený stav\nΔOLR proti referenci\n0,00W m⁻²\ntok se nezměnil\nZdvojnásobení aktuálního CO₂\n-2,01W m⁻²\nΔOLR při pevném profilu",
+      "id": 1,
+      "status": "observed"
+    },
+    {
+      "check": "Synchronizovaný kurzor a rozsah",
+      "tooltips": [
+        "Vlnočet: 45 100 m⁻¹Vlnová délka: 22,2 µmAktuální stav: 0,00259 W m⁻² (m⁻¹)⁻¹Reference: 0,00259 W m⁻² (m⁻¹)⁻¹Černý povrch: 0,00403 W m⁻² (m⁻¹)⁻¹",
+        "Vlnočet: 45 100 m⁻¹Vlnová délka: 22,2 µmAktuální průměr: 6 575,5 mReferenční průměr: 6 575,5 m10–90 %: 3 500 až 10 500 m",
+        ""
+      ],
+      "id": 2,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 1",
+      "metrics": "Vyzařování povrchu\n390,1W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n238,2W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n254,6K\nideální izotermický povrch\nBilance při aktuálním Ts\n-151,93W m⁻²\npříjem − výdej",
+      "charts": 2,
+      "id": 3,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 2",
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR proti referenci\n0,00W m⁻²\ntok se nezměnil\nZdvojnásobení aktuálního CO₂\n-1,88W m⁻²\nΔOLR při pevném profilu",
+      "charts": 3,
+      "id": 4,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 3",
+      "metrics": "OLR při aktuálním CO₂\n257,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n257,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n-1,88W m⁻²\npokles toku\nΔ dlouhovlnné bilance\n+1,88W m⁻²\n−ΔOLR, pevné ASR",
+      "charts": 2,
+      "id": 5,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 4",
+      "metrics": "Celkový OLR\n258,5W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n85,6W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n172,9W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,2191\núhlový průměr s váhou μ",
+      "charts": 2,
+      "id": 6,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 5",
+      "metrics": "Aktuální OLR\n257,1W m⁻²\nvšechny zvolené plyny\nΔOLR proti referenci\n0,00W m⁻²\naktuální − reference\nCO₂ + H₂O: společný pokles\n124,4W m⁻²\noproti sloupci bez obou plynů\nSoučet izolovaných poklesů\n137,2W m⁻²\nspolečný − součet: -12,76 W m⁻²",
+      "charts": 3,
+      "id": 7,
+      "status": "observed"
+    },
+    {
+      "check": "Načtení experimentu 6",
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n257,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-18,96W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n283,20K\nreziduum 0,000015 W m⁻²",
+      "charts": 2,
+      "id": 8,
+      "status": "observed"
+    },
+    {
+      "check": "6: izotermie 1× → 2×",
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n390,1W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-151,93W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n254,58K\nreziduum 0,000010 W m⁻²",
+      "comparison": "Rovnovážná Ts proti 1× CO₂ při stejném profilu a uzávěru: 0,000 K. Aktuální a referenční rovnovážná teplota se shodují. V plné izotermii s posunem profilu to platí pro každý sloupec CO₂.",
+      "id": 9,
+      "status": "observed"
+    },
+    {
+      "check": "6: inverze 1× → 2×",
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n496,7W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-258,50W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "comparison": "Rovnovážná Ts proti 1× CO₂ při stejném profilu a uzávěru: -0,481 K. Aktuální sloupec CO₂ zde dává nižší rovnovážnou povrchovou teplotu než 1×. Teplotní profil je předepsaný; model neřeší jeho samovolné vytvoření ani udržení.",
+      "id": 10,
+      "status": "observed"
+    },
+    {
+      "check": "6: nastavení nalezené rovnováhy",
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 235,8 K\nEnergetická nerovnováha N\n+0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "id": 11,
+      "status": "observed"
+    },
+    {
+      "check": "6: pevná atmosféra po nastavení kořene",
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 276,0 K\nEnergetická nerovnováha N\n-0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n275,99K\nreziduum -0,000005 W m⁻²",
+      "id": 12,
+      "status": "observed",
+      "anchorNote": "DOM value attribute absent; atmospheric anchor behavior is separately numerically verified."
+    },
+    {
+      "check": "4: Ts = Ta při τ=1",
+      "metrics": "Celkový OLR\n390,1W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n85,6W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n304,5W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,2191\núhlový průměr s váhou μ",
+      "id": 13,
+      "status": "observed"
+    },
+    {
+      "check": "4: Ts = Ta při τ=12",
+      "metrics": "Celkový OLR\n390,1W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n85,6W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n304,5W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,2191\núhlový průměr s váhou μ",
+      "id": 14,
+      "status": "superseded; corrected and verified in observation 26"
+    },
+    {
+      "check": "3: izotermie",
+      "metrics": "OLR při aktuálním CO₂\n390,1W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n390,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n-0,00W m⁻²\ntok se nemění\nΔ dlouhovlnné bilance\n+0,00W m⁻²\n−ΔOLR, pevné ASR",
+      "id": 15,
+      "status": "observed"
+    },
+    {
+      "check": "3: inverze",
+      "metrics": "OLR při aktuálním CO₂\n494,0W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n494,0W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n+2,71W m⁻²\nrůst toku\nΔ dlouhovlnné bilance\n-2,71W m⁻²\n−ΔOLR, pevné ASR",
+      "id": 16,
+      "status": "observed"
+    },
+    {
+      "check": "4: číselný vstup τ=12 (po opravě input)",
+      "metrics": "Celkový OLR\n390,1W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n0,0W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n390,1W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,0001\núhlový průměr s váhou μ",
+      "id": 17,
+      "status": "observed"
+    },
+    {
+      "check": "1: chladná rovnováha uvnitř grafu a ovladače",
+      "metrics": "Vyzařování povrchu\n390,1W m⁻²\nσTs⁴\nAbsorbované sluneční záření\n30,0W m⁻²\nS(1 − A)/4\nRovnovážná teplota\n151,7K\nideální izotermický povrch\nBilance při aktuálním Ts\n-360,11W m⁻²\npříjem − výdej",
+      "min": "120",
+      "id": 18,
+      "status": "observed"
+    },
+    {
+      "check": "Tablet 800 × 1000",
+      "layout": {
+        "charts": [
+          {
+            "height": 225,
+            "width": 462
+          },
+          {
+            "height": 225,
+            "width": 462
+          },
+          {
+            "height": 205,
+            "width": 462
+          }
+        ],
+        "scrollWidth": 800,
+        "width": 800
+      },
+      "id": 19,
+      "status": "observed"
+    },
+    {
+      "check": "Úzké rozhraní 390 × 844",
+      "layout": {
+        "charts": [
+          {
+            "height": 250,
+            "width": 336
+          },
+          {
+            "height": 250,
+            "width": 336
+          },
+          {
+            "height": 205,
+            "width": 336
+          }
+        ],
+        "scrollWidth": 390,
+        "width": 390
+      },
+      "id": 20,
+      "status": "observed"
+    },
+    {
+      "check": "CO2 control 8x, full plotted domain 0..8",
+      "passed": true,
+      "metrics": "OLR při aktuálním CO₂\n250,9W m⁻²\nzadaný teplotní profil\nOLR při 1× CO₂\n257,1W m⁻²\nstejný aktuální profil\nΔOLR: 1× → 2× CO₂\n-1,88W m⁻²\npokles toku\nΔ dlouhovlnné bilance\n+1,88W m⁻²\n−ΔOLR, pevné ASR",
+      "caption": "Vertikální profil atmosférické teploty\n\nTeplota záření závisí na vrstvě, která přispívá do výsledného toku\n\nSVG\nPNG\nCSV\n250\n0\n10 000\n20 000\n30 000\n40 000\n50 000\nTeplota T / K\nVýška z / m\nAktuální profil\nReference\n\nNajeďte kurzorem nebo se dotkněte grafu pro zobrazení hodnot.\n\nZměna OLR s množstvím CO₂\n\nKaždá křivka: proti 1× CO₂ při vlastním pevném teplotním profilu\n\nSVG\nPNG\nCSV\n0\n10\n20\n0\n2\n4\n6\n8\nΔOLR / W m⁻²\nNásobek původního sloupce CO₂ / 1\nAktuální profil\nReferenční profil\n\nČára spojuje vypočtené body od 0× do 8×. Každý bod porovnává stejný profil proti 1× CO₂.",
+      "id": 21,
+      "status": "observed"
+    },
+    {
+      "check": "Advanced explanation expands with equations, assumptions, sources",
+      "passed": true,
+      "content": "Rovnice a její význam\nμ dIκ/dτκ = Iκ − Bκ(T),   μ = cos θ\n\nOptická souřadnice τ roste od horního okraje dolů. Iκ je spektrální zářivost, Bκ Planckova zářivost. V homogenní vrstvě platí Iven = Idovnitř exp(−Δτ/μ) + Bκ(T) [1 − exp(−Δτ/μ)]. Druhý člen je vlastní emise atmosféry.\n\nFκ = 2π ∫₀¹ Iκ(μ) μ dμ\nQ(τ) = 2 E₃(τ) = 2 ∫₀¹ μ exp(−τ/μ) dμ\n\nTok na horním okraji je Fκ = Mκ(Ts) Q(τcelkem) + Σ Mκ(Tj)[Q(τnad j) − Q(τnad j + Δτj)], kde Mκ = π Bκ. Váhy jsou nezáporné a jejich součet je jedna. Funkce E₃ se vyhodnocuje numericky; nejde o aproximaci jedním paprskem.\n\nPředpoklady\n\nRovinné rovnoběžné vrstvy, černý povrch, žádný rozptyl v tepelném infračerveném oboru, žádné záření přicházející shora a lokální termodynamická rovnováha (LTE). V LTE platí Kirchhoffův zákon a zdrojová funkce je Bκ(T). V řídké horní atmosféře nebo při výrazných odchylkách od LTE toto řešení obecně nestačí.\n\nSpektroskopie a ",
+      "id": 22,
+      "status": "observed"
+    },
+    {
+      "check": "About dialog displays model categories and limitations",
+      "passed": true,
+      "content": "Co v laboratoři opravdu počítáme\n✕\n\nPlanckův zákon a přenos záření určují výsledky. Spektrální absorpce pochází z veřejného Oxfordského atlasu (RFM, HITRAN 2012). Žádná absorpční pásma nejsou nakreslená odhadem.\n\nFyzikální zákony\nPlanckův zákon, Stefanův–Boltzmannův zákon a Schwarzschildova rovnice bez rozptylu, v lokální termodynamické rovnováze.\n\nNumerická aproximace\n50 homogenních vrstev, úhlově integrovaný přenos a spektrální vzorkování. Výpočty probíhají před zprůměrováním grafu.\n\nZjednodušený model\nPůvodní sloupcová absorpce je rozdělená do výšky exponenciálně. Koeficienty se při změně teploty ani tlaku nepřepočítávají. Oblaka, rozptyl, konvekce a samostatný výpočet vodního kontinua nejsou přidané.\n\nOdborné klimatické výsledky\nHodnota 3,7 W m⁻² pro zdvojnásobení CO₂ je literární odhad po přizpůsobení stratosféry. Tento model ji nepoužívá k úpravě výsledků. Počítá změnu OLR při zadaném profilu.\n\nGrafy ukazují důsledky uvedeného modelu. Výšky příspěvků a rovnovážné teploty nejsou měřením Země ani předpovědí klimatu.\n\nÚplná fyzikální dokumentace · Provedená validace · Návod",
+      "id": 23,
+      "status": "observed"
+    },
+    {
+      "check": "Full spectral sampling in browser worker",
+      "passed": true,
+      "metrics": "Aktuální OLR\n257,1W m⁻²\ntok do vesmíru\nOLR reference\n257,1W m⁻²\nuložený stav\nΔOLR proti referenci\n0,00W m⁻²\ntok se nezměnil\nZdvojnásobení aktuálního CO₂\n-1,87W m⁻²\nΔOLR při pevném profilu",
+      "status": "observed",
+      "id": 24
+    },
+    {
+      "check": "Final inversion equilibrium compared with same profile 1x CO2",
+      "passed": true,
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n496,7W m⁻²\npři Ts = 288,0 K\nEnergetická nerovnováha N\n-258,50W m⁻²\nvýdej energie převažuje\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "conclusion": "Průsečík příjmu a výdeje\n\nRovnováha N = 0 je výsledkem zvolené uzávěrové podmínky\n\nSVG\nPNG\nCSV\n500\n1 000\n1 500\n200\n250\n300\n350\nTok / W m⁻²\nPovrchová teplota Ts / K\nOLR aktuální\nASR aktuální\nOLR reference\nASR reference\n\nTs = 235,765 K · dOLR/dTs = 3,630 W m⁻² K⁻¹ · stabilní pro pevné ASR a kladnou tepelnou kapacitu.\n\nEnergetická nerovnováha\n\nN > 0: planeta energii získává · N < 0: energii ztrácí\n\nSVG\nPNG\nCSV\n-1 000\n-500\n0\n200\n250\n300\n350\nN / W m⁻²\nPovrchová teplota Ts / K\nAktuální podmínky\nReferenční podmínky\n\nNajeďte kurzorem nebo se dotkněte grafu pro zobrazení hodnot.\n\nRovnovážná Ts proti 1× CO₂ při stejném profilu a uzávěru: -0,481 K. Aktuální sloupec CO₂ zde dává nižší rovnovážnou povrchovou teplotu než 1×. Teplotní profil je předepsaný; model neřeší jeho samovolné vytvoření ani udržení.",
+      "id": 25,
+      "status": "observed"
+    },
+    {
+      "check": "Final gray test: numeric input tau=12 at Ts=Ta=288 K",
+      "passed": true,
+      "metrics": "Celkový OLR\n390,1W m⁻²\npovrch + atmosféra\nPovrchový příspěvek\n0,0W m⁻²\nσTs⁴ · 2E₃(τ)\nAtmosférický příspěvek\n390,1W m⁻²\nσTa⁴ · [1 − 2E₃(τ)]\nHemisférická propustnost\n0,0001\núhlový průměr s váhou μ",
+      "status": "observed",
+      "id": 26
+    },
+    {
+      "check": "Final equilibrium setting and rounded zero label",
+      "passed": true,
+      "metrics": "ASR\n238,2W m⁻²\npříjem sluneční energie\nAktuální OLR\n238,2W m⁻²\npři Ts = 235,8 K\nEnergetická nerovnováha N\n0,00W m⁻²\nbilance je vyrovnaná\nRovnovážná teplota\n235,77K\nreziduum 0,000013 W m⁻²",
+      "id": 27,
+      "status": "observed"
+    }
+  ],
+  "exportVerification": {
+    "svg": {
+      "bytes": 11139,
+      "validXML": true,
+      "width": 647,
+      "height": 350
+    },
+    "png": {
+      "bytes": 97212,
+      "width": 1294,
+      "height": 700,
+      "visuallyInspected": true
+    },
+    "csv": {
+      "bytes": 183909,
+      "rowsIncludingHeader": 2501
+    }
+  },
+  "consoleWarningsAndErrors": []
+}

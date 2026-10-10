@@ -1,0 +1,234 @@
+{
+  "sourceHashes": {
+    "co2": {
+      "actual": "37ab7c5be8f0ded09191c8163de02fc70a2acae695662fcd0e3324bdb972b6fe",
+      "expected": "37ab7c5be8f0ded09191c8163de02fc70a2acae695662fcd0e3324bdb972b6fe",
+      "match": true
+    },
+    "h2o": {
+      "actual": "9cce12a334f8cddbfe25d944c6b978fbdcc5838e27a3c65f77b5d659b51943c7",
+      "expected": "9cce12a334f8cddbfe25d944c6b978fbdcc5838e27a3c65f77b5d659b51943c7",
+      "match": true
+    },
+    "ch4": {
+      "actual": "5da7c2d55381dbb9707a3b3d6eb94e2e431aa7017625eb761e94f5c2d3732206",
+      "expected": "5da7c2d55381dbb9707a3b3d6eb94e2e431aa7017625eb761e94f5c2d3732206",
+      "match": true
+    },
+    "n2o": {
+      "actual": "d6171b8f7c686f900da2a1ea77e5d72de236e756f74d0787fbf2a5f5e30dc9ee",
+      "expected": "d6171b8f7c686f900da2a1ea77e5d72de236e756f74d0787fbf2a5f5e30dc9ee",
+      "match": true
+    }
+  },
+  "angularRecurrence": [
+    {
+      "profile": "reference",
+      "bin": 200,
+      "wavenumber": 40100,
+      "independent": 0.002112518993673525,
+      "actual": 0.0021125190615694273,
+      "relativeError": 3.2139782168982833e-8
+    },
+    {
+      "profile": "reference",
+      "bin": 333,
+      "wavenumber": 66700,
+      "independent": 0.002443349618834618,
+      "actual": 0.002443349589220869,
+      "relativeError": 1.2120143999538868e-8
+    },
+    {
+      "profile": "reference",
+      "bin": 500,
+      "wavenumber": 100100,
+      "independent": 0.002469769732296851,
+      "actual": 0.0024697697169948018,
+      "relativeError": 6.195739254977184e-9
+    },
+    {
+      "profile": "reference",
+      "bin": 700,
+      "wavenumber": 140100,
+      "independent": 0.00020776814108488666,
+      "actual": 0.00020776818152910592,
+      "relativeError": 1.946603130908997e-7
+    },
+    {
+      "profile": "reference",
+      "bin": 1100,
+      "wavenumber": 220100,
+      "independent": 0.000017217019710112473,
+      "actual": 0.000017217024808707614,
+      "relativeError": 2.961368295029132e-7
+    },
+    {
+      "profile": "isothermal",
+      "bin": 200,
+      "wavenumber": 40100,
+      "independent": 0.00376198764744412,
+      "actual": 0.003761987647444119,
+      "relativeError": 2.220446049250313e-16
+    },
+    {
+      "profile": "isothermal",
+      "bin": 333,
+      "wavenumber": 66700,
+      "independent": 0.00411251431807178,
+      "actual": 0.00411251431807178,
+      "relativeError": 0
+    },
+    {
+      "profile": "isothermal",
+      "bin": 500,
+      "wavenumber": 100100,
+      "independent": 0.002543993354617568,
+      "actual": 0.002543993354617566,
+      "relativeError": 8.881784197001252e-16
+    },
+    {
+      "profile": "isothermal",
+      "bin": 700,
+      "wavenumber": 140100,
+      "independent": 0.0009400262323953603,
+      "actual": 0.0009400262323953606,
+      "relativeError": 3.3306690738754696e-16
+    },
+    {
+      "profile": "isothermal",
+      "bin": 1100,
+      "wavenumber": 220100,
+      "independent": 0.00006692593391385895,
+      "actual": 0.00006692593391385895,
+      "relativeError": 0
+    },
+    {
+      "profile": "inversion",
+      "bin": 200,
+      "wavenumber": 40100,
+      "independent": 0.004640746450891018,
+      "actual": 0.004640746415253088,
+      "relativeError": 7.679353153378088e-9
+    },
+    {
+      "profile": "inversion",
+      "bin": 333,
+      "wavenumber": 66700,
+      "independent": 0.005881674203016456,
+      "actual": 0.0058816742030164525,
+      "relativeError": 6.661338147750939e-16
+    },
+    {
+      "profile": "inversion",
+      "bin": 500,
+      "wavenumber": 100100,
+      "independent": 0.002586385598087492,
+      "actual": 0.0025863855949903604,
+      "relativeError": 1.1974747859966328e-9
+    },
+    {
+      "profile": "inversion",
+      "bin": 700,
+      "wavenumber": 140100,
+      "independent": 0.001653359343399197,
+      "actual": 0.0016533593070810918,
+      "relativeError": 2.1966250818294952e-8
+    },
+    {
+      "profile": "inversion",
+      "bin": 1100,
+      "wavenumber": 220100,
+      "independent": 0.00016032250465271633,
+      "actual": 0.00016032250022010247,
+      "relativeError": 2.7648108469335853e-8
+    }
+  ],
+  "extremeProfiles": [
+    {
+      "name": "cold steep",
+      "minT": 85,
+      "maxT": 220,
+      "olr20": 45.237543604167165,
+      "olr200": 45.23822433441612,
+      "olrSamplingError": -0.0006807302489519884,
+      "delta20": -1.4943476812012122,
+      "delta200": -1.4940060001252178,
+      "deltaSamplingError": -0.00034168107599441555
+    },
+    {
+      "name": "warm inversion",
+      "minT": 340,
+      "maxT": 503.5,
+      "olr20": 1175.0271708131131,
+      "olr200": 1174.9795143061515,
+      "olrSamplingError": 0.04765650696162993,
+      "delta20": 26.589591383830793,
+      "delta200": 26.586376811127593,
+      "deltaSamplingError": 0.003214572703200247
+    },
+    {
+      "name": "standard",
+      "minT": 217,
+      "maxT": 288,
+      "olr20": 257.13619295847855,
+      "olr200": 257.1449877197594,
+      "olrSamplingError": -0.008794761280853436,
+      "delta20": -1.877945342760512,
+      "delta200": -1.8744609993741506,
+      "deltaSamplingError": -0.003484343386361388
+    },
+    {
+      "name": "strong stratospheric inversion",
+      "minT": 149.5,
+      "maxT": 272.5,
+      "olr20": 85.82726614248355,
+      "olr200": 85.83812730950368,
+      "olrSamplingError": -0.010861167020124185,
+      "delta20": 3.0032831514534024,
+      "delta200": 3.007058977671633,
+      "deltaSamplingError": -0.0037758262182308044
+    }
+  ],
+  "nonisothermalCancellation": {
+    "gradient": -0.003582885373136399,
+    "stratGradient": 0.001,
+    "delta": 1.7053025658242404e-13,
+    "Tsurface": 288,
+    "Ttropopause": 248.58826089549962,
+    "Ttop": 287.5882608954996
+  },
+  "isothermalRoundoff": [
+    {
+      "ts": 220,
+      "delta": 4.064304448547773e-12
+    },
+    {
+      "ts": 255,
+      "delta": -2.5011104298755527e-12
+    },
+    {
+      "ts": 288,
+      "delta": -2.1032064978498966e-12
+    },
+    {
+      "ts": 340,
+      "delta": -1.1368683772161603e-11
+    }
+  ],
+  "fixedAnchor": {
+    "equilibriumTs235": 275.9900712966919,
+    "equilibriumTs300": 275.9900712966919,
+    "rootDifference": 0,
+    "residualAfterSettingRoot": -0.000005282235719050732
+  },
+  "independentChecksPassed": true,
+  "lowSolarHighAlbedo": {
+    "S": 600,
+    "A": 0.8,
+    "equilibrium": 151.66220977184977,
+    "checkedUITemperatureRange": [
+      120,
+      380
+    ]
+  }
+}
