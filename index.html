@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#122f36">
+<meta name="description" content="Šest interaktivních fyzikálních experimentů: Planckův zákon, spektra HITRAN, atmosférická emise a energetická rovnováha.">
+<title>Skleníkový efekt · Interaktivní fyzikální laboratoř</title>
+<link rel="stylesheet" href="styles.css?v=8fbe778cf2"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main-content">Přejít k obsahu</a>
+<header class="topbar"><a class="brand" href="#uvod" aria-label="Fyzikální laboratoř – úvod"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/><ellipse cx="20" cy="20" rx="17" ry="6" transform="rotate(-35 20 20)"/><circle cx="31" cy="10" r="3"/></svg><span>FYZIKÁLNÍ <b>LABORATOŘ</b></span></a><div class="toplinks"><span class="offline-dot">Výpočty přímo v prohlížeči</span><button class="textbutton" id="about-button">O modelu a zdrojích ↗</button></div></header>
+<div class="shell">
+<aside class="sidebar">
+<div class="side-kicker">SKLENÍKOVÝ EFEKT</div><div class="side-title">Zkoumejte.<br>Měňte. Objevujte.</div><p>Šest experimentů o tom, jak Země vyzařuje energii do vesmíru.</p>
+<nav id="navigation" aria-label="Fyzikální experimenty"></nav>
+<div class="side-footer"><span class="small-label">OD ZÁKONA K MODELU</span><p>Jednoduchá vysvětlení.<br>Fyzika, kterou lze ověřit.</p><a href="PHYSICS.md">Fyzikální dokumentace ↗</a><a href="VALIDATION.md">Výsledky kontrol ↗</a></div>
+</aside>
+<main id="main-content">
+<section id="intro" class="home" aria-labelledby="home-title">
+  <div class="home-hero">
+    <div class="eyebrow">PRŮVODCE FYZIKÁLNÍ LABORATOŘÍ</div>
+    <h1 id="home-title">Jak Země vyzařuje<br>energii do vesmíru?</h1>
+    <p class="home-lead">Šest experimentů vám pomůže pochopit skleníkový efekt. Měňte teploty a množství plynů, porovnávejte výsledky a ověřujte si, z čeho skutečně vyplývají.</p>
+    <div class="home-actions"><a class="button primary" href="#2">Začít s CO₂ a spektrem →</a><a class="button" href="#pruvodce">Nejdřív projít experimenty ↓</a></div>
+    <div class="home-facts"><span>6 počítaných experimentů</span><span>Grafy s hodnotami pod kurzorem</span><span>Lokální spektrální data</span></div>
+  </div>
+
+  <section class="home-basics" aria-labelledby="basics-title">
+    <div><span class="small-label">NEŽ ZAČNETE</span><h2 id="basics-title">Energie přichází.<br>Energie odchází.</h2></div>
+    <div class="home-prose">
+      <p>Země přijímá energii ze Slunce. Část slunečního záření odrazí, zbytek pohltí. Povrch i atmosféra zároveň vyzařují tepelné infračervené záření. Když planeta v průměru přijímá více energie, než vydává, její zásoba energie roste. Při opačné nerovnováze klesá.</p>
+      <p>CO₂, vodní pára a další plyny některé části infračerveného záření pohlcují a samy také vyzařují. Záření unikající do vesmíru proto obsahuje jak přímý příspěvek povrchu, tak příspěvky atmosférických vrstev. Výsledek závisí na množství plynů <strong>i na jejich teplotách</strong>.</p>
+      <p>Pro začátek oddělte dvě otázky: <strong>Jak se po přidání plynu změní záření při stejných teplotách?</strong> A teprve potom: <strong>Při jaké nové teplotě by se příjem a výdej vyrovnaly?</strong> První otázku řeší experimenty 2–5, druhou experiment 6.</p>
+    </div>
+  </section>
+
+  <section class="home-glossary" aria-labelledby="glossary-title">
+    <h2 id="glossary-title">Čtyři pojmy, které budete potřebovat</h2>
+    <dl class="glossary-grid">
+      <div><dt>Tok záření</dt><dd>Kolik energie projde za sekundu jednotkovou plochou. Jeden W m⁻² znamená jeden joule za sekundu na metr čtvereční. Tok měří energii, nikoli teplotu.</dd></div>
+      <div><dt>ASR a OLR</dt><dd>ASR je průměrný tok pohlceného slunečního záření. OLR je tok dlouhovlnného záření odcházejícího do vesmíru. Oba porovnáváme na horním okraji atmosféry a vztahujeme na celou plochu planety.</dd></div>
+      <div><dt>Spektrum a vlnočet</dt><dd>Spektrum rozděluje záření podle jeho vlnové délky. V našich grafech používáme vlnočet κ = 1/λ v m⁻¹: větší vlnočet znamená kratší vlnovou délku. Výška křivky udává tok na jednotkový interval vlnočtu.</dd></div>
+      <div><dt>1× nebo 2× plynu</dt><dd>Jde o násobek původního množství plynu ve svislém sloupci zdrojového atlasu. 2× znamená dvojnásobný sloupec při pevných absorpčních koeficientech. Není to údaj v ppm; zdroj pro takový převod neposkytuje dostatečná metadata.</dd></div>
+    </dl>
+    <p class="home-note">Teploty zadáváme v kelvinech. Pro orientaci: 273,15 K odpovídá 0 °C a 288 K přibližně 15 °C. Grafy a výpočty používají jednotky SI.</p>
+  </section>
+
+  <section id="pruvodce" class="experiment-guide" aria-labelledby="guide-title">
+    <div class="section-heading"><div><span class="small-label">VYBERTE SI OTÁZKU</span><h2 id="guide-title">Co se dozvíte v jednotlivých experimentech</h2></div><p>Čtěte postupně, nebo se vraťte ke konkrétnímu vysvětlení. Každý experiment má také vlastní stručný výklad a rozbalovací odborné pozadí.</p></div>
+    <nav class="guide-index" aria-label="Vysvětlení jednotlivých experimentů">
+      <a href="#uvod-1"><b>01</b><span>Vyzařování povrchu</span></a><a href="#uvod-2"><b>02</b><span>CO₂ a původ záření</span></a><a href="#uvod-3"><b>03</b><span>Teplotní profil</span></a><a href="#uvod-4"><b>04</b><span>Izotermická vrstva</span></a><a href="#uvod-5"><b>05</b><span>Překryv plynů</span></a><a href="#uvod-6"><b>06</b><span>Energetická rovnováha</span></a>
+    </nav>
+
+    <article id="uvod-1" class="guide-card" style="--guide-accent:#d58c43">
+      <header><span class="guide-number">01</span><div><p class="guide-kicker">PLANCKŮV ZÁKON</p><h3>Kolik vyzařuje samotný povrch?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>Každé těleso s nenulovou absolutní teplotou vyzařuje. U zemských teplot je většina tohoto záření infračervená, tedy pro naše oči neviditelná. První experiment uvažuje rovnoměrně teplý povrch, který v tepelném oboru vyzařuje jako ideální černé těleso, a zcela průhlednou atmosféru.</p>
+        <p><strong>První graf ukazuje spektrum.</strong> Při zvýšení teploty roste vyzařování a maximum se posouvá k větším vlnočtům. Plocha pod <em>celým</em> spektrem dává celkový tok σT⁴. Zobrazený graf zachycuje vybraný rozsah; číselná karta používá celkový tok. Maximum spektra na jednotku vlnočtu není ve stejné vlnové délce jako maximum spektra na jednotku vlnové délky.</p>
+        <p><strong>Druhý graf porovnává příjem a výdej.</strong> Sluneční konstanta určuje přísun záření, albedo podíl odraženého světla. Vyšší albedo znamená menší pohlcený přísun. Rovnováha je v průsečíku obou křivek. Faktor 1/4 ve slunečním příjmu vyjadřuje poměr osvětleného průřezu a celé plochy koule.</p>
+        <p class="guide-caution">Přibližně 255 K je za výchozích podmínek rovnováha tohoto ideálního povrchu. U skutečné planety je efektivní vyzařovací teplota definována z OLR a obecně se nerovná teplotě povrchu.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Zvyšte teplotu z 288 na 300 K a sledujte celé spektrum.</li><li>Vraťte výchozí stav a zvyšte albedo. Jak se posune průsečík?</li><li>Porovnejte aktuální povrchovou teplotu s nalezenou rovnováhou.</li></ol><a class="button" href="#1">Otevřít experiment 1 →</a></aside></div>
+    </article>
+
+    <article id="uvod-2" class="guide-card" style="--guide-accent:#167c82">
+      <header><span class="guide-number">02</span><div><p class="guide-kicker">SPEKTRUM A PŘÍSPĚVKY VRSTEV</p><h3>Co se změní, když přidáte CO₂?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>Začněte s pevnou teplotou povrchu i atmosféry. Přidáním CO₂ měníte přenos záření, zatímco teploty ponecháváte stejné. Záření z povrchu je v absorpčních oblastech více zeslabeno. Do výsledku se zároveň přidává vlastní záření atmosféry podle teploty jednotlivých vrstev.</p>
+        <p><strong>Spektrální graf</strong> porovnává aktuální a referenční tok do vesmíru. Číselná karta OLR sčítá energii přes spektrum; ΔOLR udává aktuální tok minus referenční. Záporný rozdíl znamená menší odvod energie, kladný větší. Pokud při porovnávání změníte i teplotní profil, rozdíl již není samotným účinkem CO₂ — aplikace to označí.</p>
+        <p><strong>Graf výšek</strong> ukazuje průměrnou výšku váženou unikajícím tokem a pás obsahující 10–90 % příspěvku. Jedné části spektra nepřiřazujeme jedinou emisní hladinu. Kliknutím na spektrum zobrazíte, kolik přispívají jednotlivé vrstvy. Výška je v tomto profilu svisle, velikost příspěvku vodorovně; přímý povrchový příspěvek je uveden zvlášť.</p>
+        <p class="guide-caution">Vyšší absorpce sama neurčuje, zda OLR klesne nebo vzroste. Rozhodují i teploty vrstev. Zdrojové spektrum je skutečné, jeho rozdělení do výšky je však zvoleným zjednodušením modelu.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Uložte referenci při 1× CO₂. Potom nastavte 2×.</li><li>Zvolte „Pásmo CO₂“ a porovnejte spektrum s rozložením výšek.</li><li>Klikněte na různá místa spektra a sledujte příspěvky vrstev.</li></ol><a class="button" href="#2">Otevřít experiment 2 →</a></aside></div>
+    </article>
+
+    <article id="uvod-3" class="guide-card" style="--guide-accent:#6380a9">
+      <header><span class="guide-number">03</span><div><p class="guide-kicker">POKLES TEPLOTY, IZOTERMIE, INVERZE</p><h3>Proč je důležité, kde je teplo a kde chladno?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>V troposféře teplota obvykle s výškou klesá. Když se při větší absorpci více uplatní chladnější vrstvy, může při stejné povrchové teplotě do vesmíru odcházet méně záření. Není to však pravidlo platné pro každý teplotní profil.</p>
+        <p><strong>Profil čtěte odspodu vzhůru:</strong> na vodorovné ose je teplota v K, na svislé výška v m. Čára směřující s výškou doleva ukazuje ochlazování, doprava oteplování. Svislý úsek je izotermický. Tropopauza je zde zadaná výška oddělující dolní a horní část profilu, pro něž nastavujeme gradient zvlášť. Vodorovná přerušovaná čára ji označuje; při stejných gradientech se sklon nemění.</p>
+        <p>V plné izotermii mají povrch i všechny vrstvy stejnou teplotu. Atmosférická emise přesně vyrovná zeslabení povrchového záření a OLR se s CO₂ nemění. Při <strong>inverzi</strong> teplota s výškou roste. Silnější příspěvek teplejších vrstev pak může OLR naopak zvýšit. Dolní graf tuto změnu počítá proti 1× CO₂ při stejném aktuálním profilu. Karta zdvojnásobení vždy porovnává 1× → 2×, i když ovladač právě ukazuje jiný násobek.</p>
+        <p class="guide-caution">Gradient −0,0065 K m⁻¹ znamená pokles o 6,5 K na 1 000 m. Izotermický sloupec nebo inverze v celé troposféře jsou zde myšlenkové experimenty; model nevysvětluje jejich samovolné vytvoření ani udržení.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Porovnejte gradienty −0,0065 a −0,003 K m⁻¹.</li><li>Klikněte na předvolbu „0“: oba gradienty se nastaví na nulu.</li><li>Pro čistou inverzi nastavte +0,003 K m⁻¹ a nad tropopauzou 0. Sledujte znaménko ΔOLR.</li></ol><a class="button" href="#3">Otevřít experiment 3 →</a></aside></div>
+    </article>
+
+    <article id="uvod-4" class="guide-card" style="--guide-accent:#9171a4">
+      <header><span class="guide-number">04</span><div><p class="guide-kicker">PŘESNÉ ŘEŠENÍ JEDNODUCHÉ VRSTVY</p><h3>Proč pohlcení záření nestačí k vysvětlení?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>Tady odstraníme složitá molekulová pásma. Atmosféru nahradíme jedinou vrstvou se stejnou teplotou v každém místě a stejnou optickou tloušťkou pro všechny vlnové délky. „Izotermická“ znamená konstantní teplotu vzduchu; <strong>povrch může mít jinou teplotu</strong>.</p>
+        <p>Optická tloušťka τ je bezrozměrná míra zeslabení záření na svislé dráze. Při τ = 0 je vrstva průhledná. S rostoucí τ povrchový příspěvek slábne, ale vlastní emise vrstvy roste. Oba příspěvky se počítají včetně všech směrů horní polokoule, nikoli jen jediného svislého paprsku.</p>
+        <p><strong>První graf ukazuje součet, druhý jeho dvě části.</strong> Je-li vzduch chladnější než povrch, součet s absorpcí klesá. Je-li teplejší, roste. Při stejné teplotě povrchu a vzduchu zůstává součet přesně stejný, i když se poměr obou částí výrazně mění.</p>
+        <p class="guide-caution">Tento experiment nepopisuje molekulové spektrum CO₂. Je analyticky řešitelným testem vztahu mezi absorpcí, vlastní emisí a teplotou. Předepsaná teplota vrstvy se sama energeticky nepřizpůsobuje.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Klikněte na „Stejné teploty“ a měňte τ od 0 do 12.</li><li>Snižte teplotu atmosféry, potom ji zvyšte nad teplotu povrchu.</li><li>Vždy sledujte součet i jednotlivé příspěvky.</li></ol><a class="button" href="#4">Otevřít experiment 4 →</a></aside></div>
+    </article>
+
+    <article id="uvod-5" class="guide-card" style="--guide-accent:#4d91a5">
+      <header><span class="guide-number">05</span><div><p class="guide-kicker">CO₂ · H₂O · CH₄ · N₂O</p><h3>Proč se účinky plynů jednoduše nesčítají?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>Jednotlivé plyny mají různá absorpční spektra a v některých oblastech se překrývají. Optické tloušťky plynů na stejné dráze se v našem modelu sčítají. Výsledný tok je však nelineární funkcí absorpce a teplot. Proto obecně neplatí, že součet dvou samostatných změn OLR odpovídá změně po přidání obou plynů současně.</p>
+        <p><strong>Horní graf ukazuje optickou tloušťku</strong> v transformaci log₁₀(1 + τ). Tato stupnice umožňuje současně zobrazit slabé i silné absorpční oblasti; její hodnota není přímo procentem pohlceného záření. Další grafy ukazují odcházející spektrum a jeho rozdíl proti uložené referenci.</p>
+        <p>Číselné porovnání CO₂ a vody používá čtyři vypočtené stavy: bez obou plynů, jen s CO₂, jen s vodní párou a s oběma. CH₄ a N₂O zůstávají při tomto porovnání stejné. Rozdíl mezi společnou změnou a součtem izolovaných změn ukazuje překryv v konkrétním modelu; při jiném teplotním profilu může být i interpretace znaménka jiná.</p>
+        <p class="guide-caution">Měnění vodní páry je zde samostatný zásah do jejího sloupce. Není to automatická odezva vlhkosti na oteplení. Absorpce se při změně teploty nebo tlaku nepřepočítává.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Uložte výchozí referenci a snižte vodní páru.</li><li>Prozkoumejte „Překryv plynů“ a změňte CO₂.</li><li>Porovnejte společnou změnu toku se součtem izolovaných změn.</li></ol><a class="button" href="#5">Otevřít experiment 5 →</a></aside></div>
+    </article>
+
+    <article id="uvod-6" class="guide-card" style="--guide-accent:#bf865b">
+      <header><span class="guide-number">06</span><div><p class="guide-kicker">ASR − OLR = 0</p><h3>Kdy se může povrch ohřát, zůstat stejně teplý nebo ochladit?</h3></div></header>
+      <div class="guide-content"><div>
+        <p>Teď teplotu povrchu hledáme. Pro různé Ts model spočítá OLR a porovná ho s pohlceným slunečním příjmem. Energetická nerovnováha je N = ASR − OLR. Kladné N znamená převahu příjmu, záporné převahu výdeje. Nalezený průsečík má N = 0.</p>
+        <p><strong>Nejdřív musíte zvolit, co se děje s atmosférou.</strong> Při „Posunu celého profilu s Ts“ se každá vrstva změní o stejný počet kelvinů jako povrch; tvar profilu zůstane stejný. Při „Teplotě atmosféry pevné“ se mění jen povrch a atmosféra má vlastní nezávislou základní teplotu. Obě volby mohou vést k různým rovnováhám. Sloupce plynů a absorpce jsou v obou případech pevné.</p>
+        <p><strong>Izotermie a inverze mají své vlastní výsledky.</strong> Při posunu plně izotermického sloupce se stejnou teplotou jako povrch zůstane rovnovážná Ts po přidání CO₂ stejná. V předepsané inverzi může více CO₂ zvýšit OLR, takže se stejné ASR vyrovná při nižší Ts. Tlačítko „Porovnat 1× → 2× CO₂“ nastaví pro oba sloupce stejný profil i pravidlo změny atmosféry.</p>
+        <p class="guide-caution">Jde o rovnováhu TOA bilance za uvedených předpokladů. Samotná bilance jednoznačně neurčuje teplotu povrchu a neprokazuje rovnováhu jednotlivých vrstev. Oblaka, konvekce, vodní cyklus a klimatické zpětné vazby se zde neřeší. Čísla nejsou předpovědí zemského klimatu.</p>
+      </div><aside class="try-box"><h4>Vyzkoušejte</h4><ol><li>Zvolte „Plná izotermie“ a porovnejte 1× → 2× CO₂.</li><li>Zopakujte s předvolbou „Inverze“. Je při 2× CO₂ rovnovážná Ts nižší než při 1×?</li><li>Nastavte nalezenou rovnováhu. Potom porovnejte oba způsoby změny atmosféry.</li></ol><a class="button" href="#6">Otevřít experiment 6 →</a></aside></div>
+    </article>
+  </section>
+
+  <section class="home-reading" aria-labelledby="reading-title">
+    <h2 id="reading-title">Jak číst grafy a porovnání</h2>
+    <div class="reading-grid"><div><h3>Profily sledujte svisle</h3><p>U teploty a příspěvků jednotlivých vrstev roste výška zdola nahoru. Kurzor vybírá výšku, takže nezamění různé vrstvy se stejnou teplotou. Použijte také šipky nahoru a dolů.</p></div><div><h3>Spektra sledujte podle vlnočtu</h3><p>Spektrální grafy mají vodorovně vlnočet a společný kurzor. Graf průměrné výšky proto zůstává výškou proti vlnočtu. Záření na jednotku vlnočtu má jinou číselnou hodnotu i tvar než záření na jednotku vlnové délky.</p></div><div><h3>Reference musí odpovídat otázce</h3><p>Uložte počáteční nastavení a měňte jeden parametr. Pokud změníte několik věcí současně, rozdíl zachycuje jejich společný účinek. Návrat do výchozího stavu resetuje parametry i referenci daného experimentu.</p></div></div>
+    <p class="home-note">Uspořádání profilů odpovídá běžným výukovým grafům <a href="https://www.noaa.gov/jetstream/atmosphere/layers-of-atmosphere" target="_blank" rel="noopener">NOAA</a>. Profesionální sondáže často používají tlak a diagram Skew‑T; zde ponecháváme jednodušší výšku v metrech. Podrobnosti a zdroje: <a href="GRAPH_CONVENTIONS.md">konvence grafů</a>.</p>
+  </section>
+
+  <section class="home-boundaries" aria-labelledby="boundaries-title">
+    <span class="small-label">CO MODEL UMÍ A KDE MÁ MEZE</span><h2 id="boundaries-title">Zákon, výpočet a skutečná atmosféra</h2>
+    <p>Planckův zákon a přenosová rovnice určují výsledky; znaménko účinku CO₂ není vloženo předem. Spektrální optické tloušťky pocházejí z Oxfordského atlasu (RFM, HITRAN 2012). Do výšky je rozdělujeme zvoleným exponenciálním profilem. Tato volba není úplným přepočtem spektrálních čar pro každý tlak a teplotu.</p>
+    <p>Plyny nejsou znázorněny jako neprůhledná překážka ani jako zrcadlo. Výpočty zahrnují jejich absorpci i vlastní emisi. Model ale samostatně neřeší energetickou rovnováhu atmosférických vrstev a povrchu. Proto zejména netypické profily používejte ke zkoumání podmínek a mezních případů.</p>
+    <div class="home-docs"><a href="PHYSICS.md">Rovnice a předpoklady ↗</a><a href="VALIDATION.md">Provedené testy ↗</a><a href="REVIEW.md">Samostatná oponentura ↗</a><a href="RECHECK.md">Opakovaná kontrola ↗</a><a href="README.md">Spuštění a export ↗</a></div>
+  </section>
+  <footer class="main-footer"><span>Skleníkový efekt · průvodce šesti experimenty</span><span>Výpočty a data zůstávají v prohlížeči.</span></footer>
+</section>
+
+<section id="experiment" hidden>
+<div class="heading-row"><div><a class="guide-back" id="experiment-guide" href="#uvod">← Vysvětlení experimentu</a><div class="eyebrow" id="eyebrow"></div><h1 id="experiment-title"></h1><p class="lead" id="experiment-lead"></p></div><svg class="planet" viewBox="0 0 150 120" aria-hidden="true"><defs><radialGradient id="earth"><stop stop-color="#85cdc1"/><stop offset="1" stop-color="#22585c"/></radialGradient></defs><ellipse cx="76" cy="68" rx="57" ry="40" fill="none" stroke="#cee0db"/><ellipse cx="76" cy="68" rx="64" ry="47" fill="none" stroke="#e0e9e4"/><circle cx="76" cy="68" r="33" fill="url(#earth)"/><path d="M56 43q25 4 19 15t24 12q-5 15-18 17t-11-13q-19 3-18-13z" fill="#b5dfb8" opacity=".7"/><path d="M17 26l31 23m-13-4 13 4-5-12M108 44l17-24m-13 5 13-5-1 14M112 77l25 4m-9-8 9 8-11 6" stroke="#e89c51" stroke-width="2" fill="none"/></svg></div>
+<div class="model-strip" id="model-strip"></div>
+<div class="action-row"><span id="reference-label">Referenční stav: výchozí nastavení</span><div><button id="freeze" class="button">◎ Uložit aktuální referenci</button><button id="reset" class="button subtle">↺ Výchozí stav</button></div></div>
+<div class="workspace">
+<section class="controls" aria-label="Nastavení experimentu"><div class="panel-title"><h3>Parametry experimentu</h3><span class="control-icon">↔</span></div><div id="controls"></div><div class="control-note" id="control-note"></div></section>
+<div class="results"><div class="metrics" id="metrics" aria-live="polite"></div><div id="result-notice" class="result-notice"></div><div class="charts" id="charts"></div></div>
+</div>
+<section class="learning" id="learning"></section>
+<details class="advanced"><summary>Fyzikální a matematické pozadí <span>rovnice · předpoklady · omezení</span></summary><div id="advanced-content"></div></details>
+<footer class="main-footer"><span>Interaktivní laboratoř · všechny toky v W m⁻²</span><span id="calculation-status" role="status">Načítání spektrálních dat…</span></footer>
+</section>
+</main>
+</div>
+<dialog id="about"><div class="dialog-title"><h2>Co v laboratoři opravdu počítáme</h2><button id="close-about" class="button" aria-label="Zavřít">✕</button></div><p>Planckův zákon a přenos záření určují výsledky. Spektrální absorpce pochází z veřejného <a href="https://eodg.atm.ox.ac.uk/ATLAS/" target="_blank" rel="noopener">Oxfordského atlasu</a> (RFM, HITRAN 2012). Žádná absorpční pásma nejsou nakreslená odhadem.</p><div class="model-levels"><p><b>Fyzikální zákony</b> Planckův zákon, Stefanův–Boltzmannův zákon a Schwarzschildova rovnice bez rozptylu, v lokální termodynamické rovnováze.</p><p><b>Numerická aproximace</b> 50 homogenních vrstev, úhlově integrovaný přenos a spektrální vzorkování. Výpočty probíhají před zprůměrováním grafu.</p><p><b>Zjednodušený model</b> Původní sloupcová absorpce je rozdělená do výšky exponenciálně. Koeficienty se při změně teploty ani tlaku nepřepočítávají. Oblaka, rozptyl, konvekce a samostatný výpočet vodního kontinua nejsou přidané.</p><p><b>Odborné klimatické výsledky</b> Hodnota 3,7 W m⁻² pro zdvojnásobení CO₂ je literární odhad po přizpůsobení stratosféry. Tento model ji nepoužívá k úpravě výsledků. Počítá změnu OLR při zadaném profilu.</p></div><p>Grafy ukazují důsledky uvedeného modelu. Výšky příspěvků a rovnovážné teploty nejsou měřením Země ani předpovědí klimatu.</p><p><a href="PHYSICS.md">Úplná fyzikální dokumentace</a> · <a href="VALIDATION.md">Provedená validace</a> · <a href="README.md">Návod</a></p></dialog>
+<div class="toast" id="toast" role="status"></div>
+<noscript>Tato fyzikální laboratoř potřebuje JavaScript. Zapněte jej v prohlížeči; připojení k internetu není potřeba.</noscript>
+<script src="physics.js?v=906b7cc130"></script><script src="calculations.js?v=cc9eb23d4c"></script><script src="charts.js?v=479b2732ae"></script><script src="data/atlas.js"></script><script src="app.js?v=29ba00e6f1"></script>
+</body></html>
