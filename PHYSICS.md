@@ -262,8 +262,22 @@ Zdroje: [Myhre et al., 1998](https://doi.org/10.1029/98GL01908), [IPCC TAR, defi
 
 Výpočetní modul `physics.js` nemá závislost na DOM. `calculations.js` provádí šest experimentů nad týmž modulem. Web používá Web Worker z lokálního Blobu; při jeho nedostupnosti se stejný výpočet provede v hlavním vlákně. SVG grafy a exporty nemění výsledky modelu.
 
-Automatické testy jsou v `tests/physics.test.cjs`; přesné výsledky v `tests/results.json`. Metodika, skutečné hodnoty a omezení validace jsou v [VALIDATION.md](VALIDATION.md). Samostatná kritická oponentura kontroluje rovnice, rozměry, numeriku a interpretaci; její závěry a reprodukovatelné dodatečné kontroly jsou v REVIEW.md a tests/review-checks.cjs.
+Automatické testy jsou v `tests/physics.test.cjs`; přesné výsledky v `tests/results.json`. Metodika, skutečné hodnoty a omezení validace jsou v [VALIDATION.md](VALIDATION.md). Samostatná kritická oponentura kontroluje rovnice, rozměry, numeriku a interpretaci; její závěry a reprodukovatelné dodatečné kontroly jsou v archiv/REVIEW.md a tests/review-checks.cjs.
 
 ## 15. Zobrazení výškových profilů
 
 Teplotní profil má x = T / K, y = z / m. Příspěvkový profil má na x Cj,κ/Δzj a na y výšku. Výška roste vzhůru. Kurzor a CSV jsou seřazené podle výšky, protože T(z) i příspěvek mohou být nemonotónní. Spektrální graf výšek podle κ má jiný účel a zachovává spektrální souřadnici na x. Odůvodnění, jednotky a ověřené primární webové zdroje: [GRAPH_CONVENTIONS.md](GRAPH_CONVENTIONS.md).
+
+## 16. Diagnostická porovnání v přepracování
+
+`physics.js`, atlas i jeho metadata jsou bitově shodné s verzí 1. Nová zobrazení používají stejné toky, žádný předepsaný forcing nebo citlivost.
+
+Rozdílové spektrum je ΔFκ = Fκ,aktuální − Fκ,reference. Integrace přes všechny intervaly a rozdíl příslušných průhledných zbytků dají přesně ΔOLR. Křivka v omezeném rozsahu není celý integrál. U přesné izotermie se rozsah y nezvětšuje až na numerický šum; surová data se přitom nevynulují.
+
+Obě příspěvkové křivky zobrazují Cj,κ / Δzj. Součet Cj,κ přes vrstvy plus povrchový člen rekonstruuje spektrální tok. Povrch se neřadí do hustoty atmosférických vrstev. Tooltip u vrstvy uvádí i aktuální a referenční teplotu.
+
+Experiment 5 zveřejňuje čtyři toky při shodném aktuálním profilu a ostatních plynech: F₀ bez CO₂ a vody, Fc jen s aktuálním CO₂, Fw jen s aktuální vodou a Fcw s oběma. Společný pokles je F₀ − Fcw, součet izolovaných poklesů (F₀ − Fc) + (F₀ − Fw). Tato diagnostika se nesmí zaměnit s rozdílem aktuálního spektra proti referenci.
+
+Experiment 6 nejprve při aktuálním ASR a uzávěru hledá T₀ pro 1× CO₂. Změna N₀ = OLR₁ₓ(T₀) − OLRnové(T₀) porovnává stejné teploty. Následuje nezávislé hledání T₁ pro nový sloupec; ΔTs = T₁ − T₀. Bilanční reziduum T₀ se nepřidává k N₀. Přiblížený graf počítá 31 pravidelných teplot v okolí obou kořenů a přidává samotné kořeny; není zvětšením interpolace původní mřížky po 5 K. Teploty vrstev v každém bodě respektují zvolený uzávěr. Jeho oranžový bod obsahuje skutečné N nového sloupce při T₀, zelený bod značí numerický kořen jako N = 0.
+
+Všechny tyto vztahy ověřují `tests/teaching.test.cjs`. Aktuální rozbor je v [POSOUZENI.md](POSOUZENI.md), původní posudek v [archiv/REVIEW.md](archiv/REVIEW.md).

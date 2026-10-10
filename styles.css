@@ -61,3 +61,53 @@
 @media print{.home-actions,.guide-index,.try-box .button,.guide-back{display:none}.home-hero{background:white;color:#17363e;border:1px solid #dce5df}.home-lead,.home-hero .eyebrow,.home-facts{color:#496961}.guide-card{break-inside:avoid}.home-hero:after{display:none}}
 
 @media(min-width:901px){.sidebar nav{position:sticky;top:20px}}
+
+.version-badge{padding:5px 9px;border:1px solid #7caaa0;border-radius:5px;font-size:11px;white-space:nowrap}
+
+/* Focused experiments; the established palette and chart layer are retained. */
+.compact-hero{padding:32px 36px}
+.compact-hero h1{font-size:42px;margin:16px 0;line-height:1.15}
+.compact-hero .scope-intro{font-size:14px;line-height:1.8;color:#d2e3df;max-width:850px;margin:19px 0}
+.lab-method{display:flex;align-items:center;justify-content:center;gap:17px;padding:23px 0;font-size:13px;color:var(--muted)}
+.lab-method i{font-style:normal;color:#9cab9f}
+.experiment-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.experiment-entry{display:flex;gap:17px;background:white;border:1px solid var(--border);border-radius:10px;padding:23px;scroll-margin-top:20px}
+.entry-number{font-size:14px;font-weight:650;color:var(--teal);padding-top:4px}
+.experiment-entry h2{font-size:20px;letter-spacing:-.4px;margin:0 0 10px}
+.experiment-entry p{font-size:13px;line-height:1.6;color:var(--muted);margin:8px 0}
+.experiment-entry .entry-question{color:var(--ink);font-weight:550}
+.experiment-entry .button{display:inline-block;text-decoration:none;margin-top:9px}
+.home-help,.physics-explanation,.optional-plot{border:1px solid var(--border);background:white;border-radius:8px;min-width:0}
+.home-help{margin-top:23px}
+.home-help summary,.physics-explanation summary,.optional-plot>summary{padding:17px 20px;font-size:13px;font-weight:550;cursor:pointer;line-height:1.5}
+.home-help>div,.physics-explanation>div,.four-states{padding:0 21px 14px;font-size:14px;line-height:1.8}
+.physics-explanation .context-note{font-size:13px;color:var(--muted);border-left:2px solid var(--border);padding-left:14px}
+.learning{display:block;background:none;border:0;padding:0;margin:20px 0 13px}
+.learning p{font-size:14px;line-height:1.8;margin:13px 0;color:#46635e}
+.experiment-task{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#edf3ee;border-left:3px solid var(--accent);padding:13px 17px;margin:15px 0}
+.experiment-task .small-label{font-size:10px;letter-spacing:1.2px;color:var(--accent)}
+.experiment-task p{font-size:13px;line-height:1.7;margin:5px 0 0;max-width:640px}
+#task-actions{display:flex;flex-wrap:wrap;gap:7px;flex-shrink:0;max-width:45%}
+.view-switch{display:flex;flex-wrap:wrap;gap:7px}
+.view-switch .selected{background:var(--soft);border-color:var(--accent);color:var(--accent)}
+.charts{grid-template-columns:minmax(0,1fr)}
+.charts>*{min-width:0}
+.optional-plot .chart-card{border:0;border-top:1px solid var(--border);border-radius:0 0 8px 8px}
+.contribution-select{flex-wrap:wrap;font-size:12px;gap:9px}
+.contribution-select label{font-weight:550}
+.selected-parts{padding:0 4px;margin:0;font-size:12px;line-height:1.7;color:var(--muted)}
+.equilibrium-steps{background:#edf3ee;border:1px solid var(--border);border-radius:9px;padding:17px}
+.equilibrium-steps ol{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:0;margin:0;gap:17px}
+.equilibrium-steps li{min-width:0}
+.equilibrium-steps span{display:block;font-size:9px;font-weight:650;line-height:1.5;letter-spacing:.5px;color:var(--muted)}
+.equilibrium-steps b{display:block;margin-top:8px;font-size:21px;letter-spacing:-.5px}
+.equilibrium-steps p{font-size:12px;line-height:1.6;margin:8px 0 0;color:var(--muted)}
+.four-states table{width:100%;border-collapse:collapse;font-size:13px}
+.four-states th,.four-states td{text-align:left;padding:9px 7px;border-bottom:1px solid var(--border)}
+.four-states th:last-child,.four-states td:last-child{text-align:right}
+.lead{font-size:14px}.control-head label,.panel-title h3{font-size:12px}.control-note{font-size:12px}
+.model-strip{font-size:12px}.chart-header h3{font-size:14px}.chart-header p,.chart-caption{font-size:12px;line-height:1.7}
+.legend{font-size:11px}.result-notice{font-size:13px;line-height:1.75}.action-row{font-size:11px}
+.button{font-size:12px}.advanced summary{font-size:13px}.advanced>div{font-size:13px}.main-footer{font-size:11px;line-height:1.6}
+@media(max-width:1100px){.experiment-task{display:block}#task-actions{max-width:none;margin-top:11px}.experiment-entry{padding:19px}}
+@media(max-width:680px){.experiment-index{grid-template-columns:1fr}.compact-hero{padding:26px 22px}.compact-hero h1{font-size:33px}.compact-hero .scope-intro{font-size:13px}.lab-method{gap:8px;font-size:11px;flex-wrap:wrap}.experiment-entry{padding:20px 18px}.experiment-task{padding:13px 14px}.equilibrium-steps ol{grid-template-columns:1fr;gap:15px}.equilibrium-steps li+li{border-top:1px solid var(--border);padding-top:14px}.home-help summary,.physics-explanation summary,.optional-plot>summary{padding:15px}.home-help>div,.physics-explanation>div,.four-states{padding:0 15px 12px}.chart-actions{flex-shrink:0}.contribution-select input{width:100px;max-width:100px}}
