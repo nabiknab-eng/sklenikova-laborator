@@ -1,0 +1,66 @@
+{
+  "source": "https://eodg.atm.ox.ac.uk/ATLAS/data_files/zip/opt.zip",
+  "atlas": "https://eodg.atm.ox.ac.uk/ATLAS/",
+  "retrieved": "2026-10-09",
+  "archive_sha256": "f83c1c36083f6e3cda42a8c00fac4cbec20b82a3947df6ec0bd9a320f1c91dd1",
+  "model": "RFM v.01MAY17, HITRAN 2012, US Standard Atmosphere absorber profiles",
+  "n": 500000,
+  "start_cm": 0.01,
+  "step_cm": 0.01,
+  "end_cm": 5000,
+  "encoding": "little-endian IEEE 754 float32, base64",
+  "gases": {
+    "co2": {
+      "file": "opt_co2.opt",
+      "sha256_original": "769683f168ef5b0078a5c9f85bffa1dfd991f6e4a45181ba6c784f0971e30aa6",
+      "sha256_float32": "37ab7c5be8f0ded09191c8163de02fc70a2acae695662fcd0e3324bdb972b6fe",
+      "minimum": 2.1725973e-11,
+      "maximum": 465549.3,
+      "header": [
+        "! Optical Depth calc. for Zenith Path Airmass=01000        by RFM v.01MAY17     ",
+        "!RFM calculation of CO2 OPT spectrum                                            ",
+        "!No.Pts  Lower_Wavenumber   Delta_Wavenumber  Upper_Wavenumber  Label           ",
+        " 500000      0.0100000000      0.0100000000   5000.0000000000 'Optical Depth'"
+      ]
+    },
+    "h2o": {
+      "file": "opt_h2o.opt",
+      "sha256_original": "30df5f8dae5c66902d9763e74a64bd7d64faaf46dab86f25d9e41c167ff72df3",
+      "sha256_float32": "9cce12a334f8cddbfe25d944c6b978fbdcc5838e27a3c65f77b5d659b51943c7",
+      "minimum": 0.00089483545,
+      "maximum": 725068.2,
+      "header": [
+        "! Optical Depth calc. for Zenith Path Airmass=01000        by RFM v.01MAY17     ",
+        "!RFM calculation of H2O OPT spectrum                                            ",
+        "!No.Pts  Lower_Wavenumber   Delta_Wavenumber  Upper_Wavenumber  Label           ",
+        " 500000      0.0100000000      0.0100000000   5000.0000000000 'Optical Depth'"
+      ]
+    },
+    "ch4": {
+      "file": "opt_ch4.opt",
+      "sha256_original": "bea18e7a2b3ec7eec7cedc285e9cfd1eefbb7e33c07c8a41532e08bff774f99c",
+      "sha256_float32": "5da7c2d55381dbb9707a3b3d6eb94e2e431aa7017625eb761e94f5c2d3732206",
+      "minimum": 2.4420474e-12,
+      "maximum": 163.6856,
+      "header": [
+        "! Optical Depth calc. for Zenith Path Airmass=01000        by RFM v.01MAY17     ",
+        "!RFM calculation of CH4 OPT spectrum                                            ",
+        "!No.Pts  Lower_Wavenumber   Delta_Wavenumber  Upper_Wavenumber  Label           ",
+        " 500000      0.0100000000      0.0100000000   5000.0000000000 'Optical Depth'"
+      ]
+    },
+    "n2o": {
+      "file": "opt_n2o.opt",
+      "sha256_original": "35097915773b14d66ad35a8a38cf3e5d370c83dbc92c0a67ecbab1c666f0efa2",
+      "sha256_float32": "d6171b8f7c686f900da2a1ea77e5d72de236e756f74d0787fbf2a5f5e30dc9ee",
+      "minimum": 0.0,
+      "maximum": 96.11288,
+      "header": [
+        "! Optical Depth calc. for Zenith Path Airmass=01000        by RFM v.01MAY17     ",
+        "!RFM calculation of N2O OPT spectrum                                            ",
+        "!No.Pts  Lower_Wavenumber   Delta_Wavenumber  Upper_Wavenumber  Label           ",
+        " 500000      0.0100000000      0.0100000000   5000.0000000000 'Optical Depth'"
+      ]
+    }
+  }
+}
