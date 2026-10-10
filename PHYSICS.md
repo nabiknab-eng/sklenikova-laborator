@@ -67,7 +67,7 @@ Rovnovážná teplota jednotného, infračerveně černého povrchu bez atmosfé
  T_e=[ASR/\sigma]^{1/4}.
 \]
 
-Pro S = 1361 W m⁻² a A = 0,30 vychází ASR = 238,175 W m⁻² a Te = 254,57814 K. Volba S je referenční vstup, nikoli živě aktualizované měření.
+Pro S = 1361 W m⁻² a A = 0,30 vychází ASR = 238,175 W m⁻² a Te = 254,57814 K (−18,57186 °C). Volba S je referenční vstup, nikoli živě aktualizované měření.
 
 Efektivní vyzařovací teplota planety je definice Teff = (OLR/σ)¼. Obecně neudává teplotu povrchu ani jediné vrstvy. V tomto jediném izotermickém experimentu bez atmosféry se při rovnováze rovná Ts. Pro nerovnoměrně teplý povrch je průměrný tok σ⟨T⁴⟩, nikoli σ⟨T⟩⁴. Černý povrch v tepelném oboru může mít nenulové sluneční albedo; dokonale černé těleso ve všech oborech by mělo A = 0.
 
@@ -83,7 +83,15 @@ Každý soubor obsahuje 500 000 nezáporných optických tlouštěk na společn�
 
 Kontrolní otisky archivu, původních souborů i převedených polí, hlavičky a datum jsou v [data/PROVENANCE.json](data/PROVENANCE.json). Převod float32 mění poslední desetinná místa, nikoli významné spektrální struktury. Optické tloušťky nejsou absorpční průřezy na molekulu a nejsou emisním spektrem atlasu.
 
-**Referenční absolutní koncentrace nejsou bezpečně určeny přibalenými hlavičkami.** Rozhraní proto uvádí násobek původního sloupce, nikoli smyšlené ppm. Faktor ag = 2 je dvojnásobná absorpce původního sloupce při pevných koeficientech. Má význam zdvojnásobení množství absorbéru ve zvolené linearizaci; nemění tlakové rozšíření, vlastní rozšíření vodní páry, izotopové zastoupení ani tlak a teplotu původního spektroskopického výpočtu.
+<a id="reference-co2"></a>
+
+### Referenční CO₂ a orientační údaj ppm
+
+**Násobek sloupce zůstává hlavním vstupem výpočtu.** Rozhraní k němu uvádí orientační ekvivalent **1× ≈ 330 ppm**, **2× ≈ 660 ppm**. Ppm zde označuje objemový směšovací poměr (ppmv). [Úvod Oxfordského atlasu](https://eodg.atm.ox.ac.uk/ATLAS/) uvádí absorberové profily US Standard Atmosphere. Zveřejněný profil [RFM std.atm](https://eodg.atm.ox.ac.uk/RFM/atm/std.atm), oddíl `*CO2 [ppmv]`, obsahuje 330 ppmv od povrchu do 60 km a ve vyšších hladinách nižší hodnoty. [Dokumentace profilů RFM](https://eodg.atm.ox.ac.uk/RFM/atm/) řadí tuto sadu k historickým profilům FASCODE/ICRCCM.
+
+**Vazba konkrétního spektrálního souboru atlasu na tento nezměněný vstupní profil není přímo potvrzená.** Archiv obsahuje optické tloušťky; jejich hlavičky koncentraci ani původní vstupní konfiguraci neuvádějí. Hodnota 330 ppm je proto dokumentačně podložený předpoklad pro popis násobku. Není novým určením koncentrace z optických tlouštěk. Při zobrazení jiného násobku a používáme orientačně 330a ppm; fyzikální výpočet stále používá aτ₀. Původní soubory, jejich metadata a otisky zůstávají zachované.
+
+ Faktor ag = 2 je dvojnásobná absorpce původního sloupce při pevných koeficientech. Má význam zdvojnásobení množství absorbéru ve zvolené linearizaci; nemění tlakové rozšíření, vlastní rozšíření vodní páry, izotopové zastoupení ani tlak a teplotu původního spektroskopického výpočtu.
 
 Soubory nedokládají úplnou konfiguraci vodního kontinua ani dalších nastavení RFM. Převzaté optické tloušťky používáme tak, jak byly publikovány; samostatný model kontinua MT_CKD se nepřidává. Neprohlašujeme dataset za nejnovější HITRAN ani za spektroskopicky validovaný výpočet všech nových stavů.
 
@@ -281,3 +289,9 @@ Experiment 5 zveřejňuje čtyři toky při shodném aktuálním profilu a ostat
 Experiment 6 nejprve při aktuálním ASR a uzávěru hledá T₀ pro 1× CO₂. Změna N₀ = OLR₁ₓ(T₀) − OLRnové(T₀) porovnává stejné teploty. Následuje nezávislé hledání T₁ pro nový sloupec; ΔTs = T₁ − T₀. Bilanční reziduum T₀ se nepřidává k N₀. Přiblížený graf počítá 31 pravidelných teplot v okolí obou kořenů a přidává samotné kořeny; není zvětšením interpolace původní mřížky po 5 K. Teploty vrstev v každém bodě respektují zvolený uzávěr. Jeho oranžový bod obsahuje skutečné N nového sloupce při T₀, zelený bod značí numerický kořen jako N = 0.
 
 Všechny tyto vztahy ověřují `tests/teaching.test.cjs`. Aktuální rozbor je v [POSOUZENI.md](POSOUZENI.md), původní posudek v [archiv/REVIEW.md](archiv/REVIEW.md).
+
+## Zobrazení teplot v K a °C
+
+Ve všech pokusech zobrazujeme absolutní teploty v obou stupnicích: t [°C] = T [K] − 273,15. Převod se používá v ovladačích, kartách, pozorováních, teplotních osách, kurzorových hodnotách a teplotních sloupcích CSV. V rovnicích a ve výpočtech nadále používáme kelviny. Pro rozdíl teplot platí Δt [°C] = ΔT [K]; převod rozdílu nepoužívá posun 273,15. Stejně se číselně shodují gradienty v K/m a °C/m.
+
+Výchozí panel pokusu 6 výslovně odlišuje zadaných 288 K (14,85 °C) s N ≈ −18,96 W m⁻² od vypočtené rovnováhy při 1× CO₂ přibližně 283,20 K (10,05 °C). Tři kroky porovnání začínají v této rovnováze. Po zdvojnásobení v běžném profilu při rychlém vzorkování vychází ΔN ≈ +1,78 W m⁻² a ΔTs ≈ +0,465 K (+0,465 °C). Model zahrnuje změnu vyzařování s teplotou; ostatní klimatické zpětné vazby nejsou zahrnuté.

@@ -77,3 +77,13 @@ Samostatné HTML, vazby dokumentace, ZIP a zachování všech souborů v1 jsou k
 V této úpravě se měnily pouze texty, jejich pořadí a příslušné styly. Výpočetní moduly, grafy a spektrální data jsou bitově shodné s předchozím zveřejněním. Deset stávajících kontrol výukových výpočtů prošlo; kontrola syntaxe JavaScriptu také. Samostatné HTML obsahuje šest vložených skriptů, žádné externí skripty a jedinečná ID. Balicí kontrola potvrzuje zachování původní verze 1 a neporušený ZIP.
 
 Samostatné HTML bylo při tomto doplnění úspěšně otevřeno přímo přes file:// v Safari. Bylo ověřeno otevření vysvětlivek, pořadí úvodu, přechody do experimentů 2 a 6, rozbalení jejich nových výkladů, čitelnost vzorce a dokončení výpočtu energetické rovnováhy. Dřívější poznámka o nedostupném file:// popisuje omezení předchozího kontrolního prohlížeče.
+
+## Výchozí stav, ppm a stupně Celsia — 10. 10. 2026
+
+Pokus 6 má před ovladači otevřený výklad výchozího stavu. Tabulka uvádí Ts = 288 K (14,85 °C), CO₂ 1×, pevné ostatní plyny, S = 1361 W m⁻², A = 0,30, oba gradienty a pravidlo posunu celého profilu. Text rozlišuje bilanci tohoto bodu (OLR ≈ 257,14; N ≈ −18,96 W m⁻²) od vypočtené rovnováhy 283,20 K (10,05 °C), v níž začíná tříkrokové porovnání. Výslovně uvádí zahrnutý růst vyzařování s teplotou a nepřítomnost dalších klimatických zpětných vazeb, oblaků a výměny s oceánem.
+
+Údaj 1× ≈ 330 ppm je označen jako orientační ekvivalent podle profilu std.atm v dokumentaci RFM, kde do 60 km platí 330 ppmv. Atlas uvádí US Standard Atmosphere; konkrétní řídicí soubor použitého spektrálního souboru koncentraci přímo nepotvrzuje. Proto se neprezentuje jako jistá přesná koncentrace. Výpočty nadále používají původní optickou tloušťku a její násobky.
+
+V prohlížeči byly projity všechny pokusy: K a °C u ovladačů a teplotních výsledků, ppm u CO₂, teplotní osa v K a °C a oba teplotní gradienty přepočtené na °C na 1000 m. Změna Ts na 300 K okamžitě zobrazila 26,85 °C. Porovnání 1× → 2× zobrazilo ≈ 660 ppm a +0,465 K (+0,465 °C); předepsaná inverze zobrazila −0,481 K (−0,481 °C). Profilový a příspěvkový kurzor zobrazily teploty obou stavů ve dvou jednotkách. Samostatná základní teplota pevné atmosféry také zobrazuje °C.
+
+Pokus 6 byl zkontrolován při šířce 390 px: otevřený výklad, tabulka i teplotní graf byly čitelné, šířka dokumentu byla 390 px. Konzole nezaznamenala chyby JavaScriptu. Deset stávajících výpočetních kontrol prošlo; fyzikální moduly, spektrální data a původní verze 1 jsou zachované. CSV dostalo samostatné teplotní sloupce °C; kontrolní prohlížeč neposkytl událost stažení, takže skutečné uložení exportovaného souboru tímto průchodem nepotvrzujeme.

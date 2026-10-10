@@ -12,7 +12,7 @@ Pro spuštění stačí veřejná stránka. Pro místní kopii stáhněte celý 
 python3 -m http.server 8000
 ```
 
-Otevřete `http://localhost:8000/`. Aplikace nemá backend, sestavovací krok ani externí JavaScriptové knihovny. Spektrální data zabírají přibližně 11 MB. Výpočet běží ve Web Workeru z Blobu; při jeho nedostupnosti používá stejné jádro v hlavním vlákně. Přímé otevření `file://` nebylo v kontrolním prohlížeči ověřeno, protože jej jeho bezpečnostní politika nepovoluje; zdrojová a samostatná HTML varianta byly ověřeny přes místní HTTP.
+Otevřete `http://localhost:8000/`. Aplikace nemá backend, sestavovací krok ani externí JavaScriptové knihovny. Spektrální data zabírají přibližně 11 MB. Výpočet běží ve Web Workeru z Blobu; při jeho nedostupnosti používá stejné jádro v hlavním vlákně. Zdrojová a samostatná HTML varianta byly ověřeny přes místní HTTP; samostatné HTML bylo dále úspěšně otevřeno přímo přes `file://` v Safari.
 
 ## Výukový postup
 
@@ -23,17 +23,17 @@ Vyberte otázku v úvodu. Každý experiment nabídne konkrétní pokus, grafy a
 3. **Profil:** vyzkoušejte běžný pokles, plnou izotermii a inverzi. Sledujte znaménko změny OLR při stejných teplotách.
 4. **Šedá vrstva:** zvolte chladnější, stejně teplou a teplejší atmosféru. Měňte τ a pozorujte oba příspěvky i jejich součet v jediném grafu.
 5. **Překryv:** porovnejte zdvojnásobení CO₂ s vodou a bez vody. Doplňková tabulka vysvětluje čtyři stavy pro výpočet společných a izolovaných poklesů; jde o jiné porovnání než rozdíl proti uložené referenci.
-6. **Rovnováha:** projděte původní rovnováhu, změnu bilance při stejných teplotách a novou rovnováhu. Bilanční graf lze přiblížit k oběma průsečíkům. Porovnejte posun celého profilu s pevnou atmosférou.
+6. **Rovnováha:** přečtěte otevřený panel výchozího stavu: zadaných 288 K (14,85 °C) a vypočtená rovnováha 283,20 K (10,05 °C) jsou dva odlišné body. Potom projděte původní rovnováhu, změnu bilance při stejných teplotách a novou rovnováhu. Bilanční graf lze přiblížit k oběma průsečíkům. Porovnejte posun celého profilu s pevnou atmosférou.
 
 Reference se ukládá pro každý experiment zvlášť tlačítkem „Uložit aktuální referenci“. Tlačítka kontrolovaného porovnání nastaví původní CO₂ na 1×, aktuální na 2× a ostatní podmínky zachovají. „Výchozí stav“ obnoví parametry i referenci. Obnovení stránky uložená nastavení vymaže.
 
-Hodnoty grafu zobrazíte kurzorem, dotykem nebo šipkami. U výškových profilů vybíráte výšku šipkami nahoru/dolů, u ostatních grafů souřadnici x šipkami vlevo/vpravo. Home/End vybírají krajní vzorek. Na spektru potvrdí Enter nebo mezerník volbu vlnočtu; u bilančních grafů volbu teploty. Escape skryje hodnoty. Teplotní profil má T / K na x a z / m na y. Výška roste vzhůru.
+Hodnoty grafu zobrazíte kurzorem, dotykem nebo šipkami. U výškových profilů vybíráte výšku šipkami nahoru/dolů, u ostatních grafů souřadnici x šipkami vlevo/vpravo. Home/End vybírají krajní vzorek. Na spektru potvrdí Enter nebo mezerník volbu vlnočtu; u bilančních grafů volbu teploty. Escape skryje hodnoty. Teplotní profil má teplotu v K i °C na x a z / m na y. Výška roste vzhůru.
 
-Grafy nabízejí místní export SVG, PNG a CSV. Kontrolní prohlížeč neposkytl při pokusu o CSV událost stažení; skutečné uložení exportu na disk proto není touto kontrolou potvrzené.
+Absolutní teploty zobrazujeme v K i °C; změna o 1 K znamená změnu o 1 °C. Ovladače se zadávají v K, hodnota v °C se aktualizuje vedle nich. Grafy nabízejí místní export SVG, PNG a CSV; teplotní CSV má samostatné sloupce K a °C. Kontrolní prohlížeč neposkytl při pokusu o CSV událost stažení; skutečné uložení exportu na disk proto není touto kontrolou potvrzené.
 
 ## Co model znamená
 
-Planckův zákon, absorpce a vlastní emise určují výsledky. Optické tloušťky pocházejí z Oxfordského atlasu (RFM, HITRAN 2012). Rozdělení sloupcové absorpce do výšky je předepsaný model s 50 vrstvami. Molekulové koeficienty se při změně teploty a tlaku nepřepočítávají. Násobek 1× znamená původní sloupec atlasu; bezpečný převod na absolutní ppm metadata nedokládají.
+Planckův zákon, absorpce a vlastní emise určují výsledky. Optické tloušťky pocházejí z Oxfordského atlasu (RFM, HITRAN 2012). Rozdělení sloupcové absorpce do výšky je předepsaný model s 50 vrstvami. Molekulové koeficienty se při změně teploty a tlaku nepřepočítávají. Násobek 1× znamená původní sloupec atlasu; rozhraní přidává orientační ekvivalent 1× ≈ 330 ppm podle profilu RFM std.atm. Přesná vazba našeho spektrálního souboru na tento nezměněný profil není přímo potvrzená; podrobnosti jsou v [PHYSICS.md](PHYSICS.md#reference-co2).
 
 Neřeší se bilance každé atmosférické vrstvy, konvekce, proudění, vývoj oblaků, vodní cyklus ani oceán. Hledané Ts jsou radiační rovnováhy při zvoleném pravidlu změny profilu, nikoli klimatická předpověď. Výsledky nejsou kalibrované na 3,7 W m⁻² ani na předem zvolené oteplení.
 

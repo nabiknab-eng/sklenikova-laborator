@@ -114,3 +114,19 @@
 .button{font-size:12px}.advanced summary{font-size:13px}.advanced>div{font-size:13px}.main-footer{font-size:11px;line-height:1.6}
 @media(max-width:1100px){.experiment-task{display:block}#task-actions{max-width:none;margin-top:11px}.experiment-entry{padding:19px}}
 @media(max-width:680px){.experiment-index{grid-template-columns:1fr}.compact-hero{padding:26px 22px}.compact-hero h1{font-size:33px}.compact-hero .scope-intro{font-size:13px}.lab-method{gap:8px;font-size:11px;flex-wrap:wrap}.experiment-entry{padding:20px 18px}.experiment-task{padding:13px 14px}.equilibrium-steps ol{grid-template-columns:1fr;gap:15px}.equilibrium-steps li+li{border-top:1px solid var(--border);padding-top:14px}.home-help summary,.physics-explanation summary,.optional-plot>summary{padding:15px}.home-help>div,.physics-explanation>div,.four-states{padding:0 15px 12px}.chart-actions{flex-shrink:0}.contribution-select input{width:100px;max-width:100px}}
+
+/* Absolute temperatures and temperature changes use distinct Celsius conversions. */
+.converted-value{display:block;margin-top:5px;font-size:12px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.range-ends{gap:8px;line-height:1.5}
+.metric-celsius{font-size:13px;font-weight:600;color:var(--accent)}
+.equilibrium-steps .step-celsius{display:block;font-size:13px;font-weight:600;margin-top:4px;color:var(--ink)}
+.experiment-start{border:1px solid var(--border);border-radius:9px;background:white;margin:16px 0}
+.experiment-start>summary{padding:16px 20px;font-size:15px;font-weight:600;cursor:pointer;line-height:1.5}
+.experiment-start>div{padding:0 21px 16px;font-size:13px;line-height:1.8}
+.experiment-start p{margin:12px 0}
+.experiment-start .context-note{border-left:2px solid var(--border);padding-left:13px;color:var(--muted);font-size:12px}
+.initial-state-table{width:100%;border-collapse:collapse;font-size:12px;line-height:1.6}
+.initial-state-table th,.initial-state-table td{padding:9px 10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.initial-state-table th{width:30%;font-weight:600}
+.ppm-note{margin:10px 0 0}
+@media(max-width:680px){.experiment-start>summary{padding:15px;font-size:14px}.experiment-start>div{padding:0 15px 12px}.initial-state-table th,.initial-state-table td{padding:8px 5px}.initial-state-table th{width:35%}.control-head label{min-height:30px}.control-head .value-wrap{display:inline-block}}
