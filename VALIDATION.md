@@ -87,3 +87,13 @@ Pokus 6 má před ovladači otevřený výklad výchozího stavu. Tabulka uvád�
 V prohlížeči byly projity všechny pokusy: K a °C u ovladačů a teplotních výsledků, ppm u CO₂, teplotní osa v K a °C a oba teplotní gradienty přepočtené na °C na 1000 m. Změna Ts na 300 K okamžitě zobrazila 26,85 °C. Porovnání 1× → 2× zobrazilo ≈ 660 ppm a +0,465 K (+0,465 °C); předepsaná inverze zobrazila −0,481 K (−0,481 °C). Profilový a příspěvkový kurzor zobrazily teploty obou stavů ve dvou jednotkách. Samostatná základní teplota pevné atmosféry také zobrazuje °C.
 
 Pokus 6 byl zkontrolován při šířce 390 px: otevřený výklad, tabulka i teplotní graf byly čitelné, šířka dokumentu byla 390 px. Konzole nezaznamenala chyby JavaScriptu. Deset stávajících výpočetních kontrol prošlo; fyzikální moduly, spektrální data a původní verze 1 jsou zachované. CSV dostalo samostatné teplotní sloupce °C; kontrolní prohlížeč neposkytl událost stažení, takže skutečné uložení exportovaného souboru tímto průchodem nepotvrzujeme.
+
+
+
+## Kontrola výchozího stavu (2026-11-11)
+
+Při S = 1361 W m⁻² a A = 0,3 vychází ASR = 238,175 W m⁻² a efektivní teplota 254,578140 K. Šedá izotermie při 288 K dává pro τ = 0 i τ = 20 stejných 390,105154 W m⁻². Pro Q(1) vychází přímým algoritmem 0,2193839343955205 a nezávislou úhlovou kvadraturou 0,2193839343955202.
+
+Ve výchozím spektrálním stavu je OLR při 20 a 200 vzorcích 257,136193 a 257,144988 W m⁻²; změna OLR pro 1× → 2× CO₂ při 288 K je −1,877945 a −1,874461 W m⁻². Rozdíl rychlého a úplného vzorkování v této změně je 0,003484 W m⁻². To ověřuje numerickou konvergenci tohoto stavu, nikoli fyzikální přesnost odhadu skutečné atmosféry ani mez chyby všech nastavení.
+
+V pokusu 6 je původní kořen T₀ = 283,196073 K, nový T₁ = 283,660665 K, počáteční ΔN = +1,781434 W m⁻² a ΔTs = +0,464592 K. Jde o výsledek zadaného pravidla změny teplotního profilu, nikoli o odhad klimatické citlivosti Země.
